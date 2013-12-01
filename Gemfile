@@ -1,0 +1,8 @@
+source 'https://rubygems.org'
+gem 'sinatra'
+gem 'coffee-script'
+gem 'rdiscount'
+gem 'RedCloth'
+gem 'sass'
+gem 'slim'
+gem 'xml-sitemap'

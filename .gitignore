@@ -1,0 +1,5 @@
+.cache/**
+log/**
+.sass-cache/**
+unicorn.pid
+unicorn.sock
