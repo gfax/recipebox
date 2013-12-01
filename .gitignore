@@ -1,5 +1,5 @@
-.cache/**
-log/**
-.sass-cache/**
+.cache/
+log/
+.sass-cache/
 unicorn.pid
 unicorn.sock
