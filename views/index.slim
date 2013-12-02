@@ -1,11 +1,9 @@
-p #{@recipes.to_s}
-
 - for categories in @recipes do
   - unless categories.last.empty?
     - if categories.first == 'misc'
       h2 The Rest
     - else
-      h2 #{categories.first.split.map(&:capitalize)*' '}
+      h2 #{categories.first.gsub('-',' ').split.map(&:capitalize)*' '}
   - for page in categories.last do
     - if categories.first == 'misc'
       li
