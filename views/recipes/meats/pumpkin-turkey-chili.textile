@@ -6,7 +6,7 @@ h2. Pumpkin Turkey Chili
 * 1 bell pepper, diced
 * 3 cloves garlic, chopped
 * 1 tsp cumin
-* ~1 pound ground turkey
+* ~1 lbs ground turkey
 * 1 (15 oz) can white beans, rinsed and drained
 * 1 (15 oz) can diced tomatoes
 * 2 cups pumpkin puree or 1 (15 ounce) can pumpkin puree
@@ -25,7 +25,8 @@ Add the garlic and cumin and cook until fragrant, about a minute.
 # Add the beans, tomatoes, pumpkin puree, broth, oregano, cinnamon, ginger, nutmeg, cloves, bring to a boil, reduce the heat and simmer for 25 minutes
 
 h3. Nutrition Facts
+
 Calories 298, Fat 9g (Saturated 2g, Trans 0), Cholesterol 54mg,
 Sodium 175mg, Carbs 30g (Fiber 7g, Sugars 7g), Protein 23g
 
-Adapted from "Closet Cooking":http://www.closetcooking.com/2013/10/pumpkin-and-white-bean-turkey-chili.html
+Adapted from "Closet Cooking":http://www.closetcooking.com/2013/10/pumpkin-and-white-bean-turkey-chili.html.

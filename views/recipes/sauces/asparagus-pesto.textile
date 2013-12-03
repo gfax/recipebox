@@ -1,6 +1,6 @@
 <notextile><!-- 1385940807 --></notextile>
-
 h2. Asparagus Pesto
+
 * 1 cup asparagus, blanched
 * 1/2 cup baby spinach
 * 1 clove garlic
@@ -12,4 +12,4 @@ h2. Asparagus Pesto
 
 Place everything into a food processor and purée.
 
-"Source":http://wisconsincheesetalk.com/2011/04/25/asparagus-pesto-grilled-cheese-sandwich/
+Taken from "Kevin Lynch":http://wisconsincheesetalk.com/2011/04/25/asparagus-pesto-grilled-cheese-sandwich/.
