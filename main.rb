@@ -90,7 +90,6 @@ class RecipeBox < Sinatra::Base
   ### Routes ###
   get '/' do
     @recipes = hash_pages
-
     if settings.production?
       cache slim :index
     else
@@ -145,11 +144,12 @@ class RecipeBox < Sinatra::Base
   end
 
   not_found do
+    @recipes = hash_pages
     if settings.production?
-      cache slim :index
+      redirect '/'
     else
-      #slim :index
-      "not found"
+      @error = 'Page not found.'
+      slim :index
     end
   end
 

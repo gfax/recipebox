@@ -1,3 +1,7 @@
+- if @error
+  br
+  b #{@error}
+
 - for categories in @recipes do
   - unless categories.last.empty?
     - if categories.first == 'misc'
