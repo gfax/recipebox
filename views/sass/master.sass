@@ -3,19 +3,25 @@
 
 // Variables
 
-$background-image: "bg_black.png"
-$background-image-body: "legend.gif"
+$background-image: "bg_white.png"
 $border-style: 1px dashed $border-color
 $container-width: 79% //
 $content-width: 79%
-$sidebar-width: 21%
 $topbar-width: 100%
+
+// Fonts
+
+@font-face
+  font-family: "PT-Sans"
+  src: url('/PTS55F.ttf')
+  src: local('PTS55F')
+  src: url('/PTS55F.ttf') format('truetype')
 
 // Reset
 
 *
   background: $background-color
-  //background-image: url($background-image)
+  background-image: url($background-image)
   //background-repeat: no-repeat
   margin: 0
   padding: 0
@@ -29,11 +35,9 @@ body
   font: ($base-font * 1.05) Georgia, serif
   line-height: $vertical-rhythm
   color: $base-color
-  //background-image: url($background-image)
-  //background-repeat: repeat-y
 
 h1, h2, h3, h4, h5, h6
-  font-family: Georgia, serif
+  font-family: PT-Sans, Verdana, sans-serif
 h1, h2, h3
   font-weight: normal
   color: $header-color
@@ -47,7 +51,7 @@ h4
   @include adjust-font-size($h4-scale, 2, 0)
 
 ol, p, pre, ul
-  margin: 0
+  //margin: 0
   margin-bottom: $base-vertical-margin
 
 li
@@ -66,16 +70,10 @@ pre
 img
   border: none
 
-nav.breadcrumb
-  margin-top: $vertical-rhythm
-  color: $meta-color
-  padding: 0 0
-  font-size: 0.909em
-
 // The visuals
 
 a
-  border-bottom: 1px dotted $link-color
+  border-bottom: none
   text-decoration: none
   color: $link-color
   @include transition(color 0.25s 0 ease)
@@ -89,25 +87,11 @@ a
     color: $active-link-color
     border-bottom-color: $active-link-color
 
-article p.meta
-  a
-    border-bottom-color: $background-color
-    @include transition(border-bottom-color 0.5s 0 ease)
-  a:hover
-    border-bottom-color: $hover-link-color
-
-article h1 a
-  border-bottom: none
-
-
 // Layout
-
-article, aside, footer, header, nav, section
-  display: block
 
 div#topbar
   border-width: 1px
-  font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans-serif
+  font-family: Verdana, Helvetica, sans-serif
   font-size: 1.2em
   font-weight: none
   height: 2em
@@ -116,7 +100,6 @@ div#topbar
   width: $topbar-width
   min-width: 28em
   a
-    border-bottom: none
     color: $topbar-text
     &:hover
       color: $topbar-hover
@@ -140,14 +123,6 @@ div#container
   margin: 0 auto
   padding: 0 1em 0 1em
 
-  div#sidebar
-    min-width: 21em
-    width: $sidebar-width
-    margin-left: .5em
-    padding: 0 0 1em 1em
-    h1, h2, h3
-      margin: 0
-  
   div#content
     min-width: 21em
     width: $content-width
@@ -173,29 +148,8 @@ div#container
 div#footer
   clear: both
   color: $meta-color
+  font-family: PT-Sans, Verdana, sans-serif
+  margin: 0
+  padding: $vertical-rhythm 0 0 0
   text-align: center
   @include adjust-font-size($base-scale)
-  p
-    width: $content-width
-    margin: 0
-
-
-// Articles assigned to this page
-
-//  header[role=main] h1
-    @include adjust-font-size($h1-scale, 1.5, 0.5)
-
-//  header h1
-    @include adjust-font-size($h2-scale, 1.5, 0.5)
-
-//  article
-    h1
-      text-shadow: none
-    p.read_more
-      @include adjust-font-size(1, 0, 0)
-      margin-top: -$base-vertical-margin
-    footer
-      border-top: none
-
-//div.feed
-  margin: $base-vertical-margin 0
