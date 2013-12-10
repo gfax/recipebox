@@ -50,8 +50,7 @@ h3
 h4
   @include adjust-font-size($h4-scale, 2, 0)
 
-ol, p, pre, ul
-  //margin: 0
+ol, pre, ul
   margin-bottom: $base-vertical-margin
 
 li
@@ -89,7 +88,7 @@ a
 
 // Layout
 
-div#topbar
+#topbar
   border-width: 1px
   font-family: Verdana, Helvetica, sans-serif
   font-size: 1.2em
@@ -116,14 +115,14 @@ div#topbar
     padding-left: .3em
     padding-top: .3em
 
-div#container
+#container
   width: $container-width
   max-width: 58em
   min-width: 42em
   margin: 0 auto
   padding: 0 1em 0 1em
 
-  div#content
+  #content
     min-width: 21em
     width: $content-width
     float: right
@@ -145,7 +144,7 @@ div#container
       padding: 1px
       text-align: center
 
-div#footer
+footer
   clear: both
   color: $meta-color
   font-family: PT-Sans, Verdana, sans-serif

@@ -14,10 +14,10 @@ html
         li: a href="//wiki.gfax.ch"  Wiki
         li.first: a href="//r.gfax.ch"  Recipebox
         li: a href="//z.gfax.ch"  Zipper
-    div id="container"
+    #container
       #content
         == yield
-        - if @date
-          | Posted #{@date}
-    #footer
-      | Copyright © #{Time.now.year} #{SiteName}
+    footer
+      - if @date
+        | Posted #{@date}. 
+      p Copyright © #{Time.now.year} #{SiteName}
