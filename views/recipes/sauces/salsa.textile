@@ -1,8 +1,8 @@
 <notextile><!-- 1385915286 --></notextile>
 h2. Salsa
 
-* 1 (28 oz) can of whole tomatoes (drained)
-* 2 (10 oz) cans of diced tomatoes and green chiles (Rotel cans these)
+* 1 (28 oz) can diced tomatoes (drained)
+* 2 (10 oz) cans diced tomatoes and green chiles (Rotel cans these)
 * 1 garlic glove
 * 1/2 cup of fresh cilantro
 * 1/2 lime
@@ -10,11 +10,12 @@ h2. Salsa
 * 1/4 tsp sugar
 * 1/4 tsp salt
 * 1/4 tsp ground cumin
-* The Peppers*
+* Peppers*
 
-Rinse and chop peppers. This will ensure it is evenly mixed in the salsa. Always use gloves if you are chopping hotter peppers. Throw all the ingredients in a large food processor and mix until it has the consistency of Mexican restaurant salsa.
+# Rinse and chop peppers. This will ensure it is evenly mixed in the salsa. Always use gloves if you are chopping hotter peppers.
+# Throw all the ingredients in a large food processor and mix until it has the consistency of Mexican restaurant salsa.
 
-h3. The Peppers
+h3. Peppers
 
 Warning: remember that peppers burn people differently, so your results may vary.
 * "Jalapeño":http://en.wikipedia.org/wiki/Jalape%C3%B1o - Tasty and essential. Mild pepper with a quick burn. If this is the only pepper you're adding, leave half the seeds for some warmth, all the seeds for some burn.

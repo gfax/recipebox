@@ -14,8 +14,6 @@ h2. Maque Choux
 * 1/8 tsp chipotle chile powder (optional)
 * salt and pepper to taste
 
-Directions
-
 # Cut the corn kernels from the cob but only cut into them about 2/3 of the way and set aside.
 # Scrape the remaining 1/3 of the corn kernels off in a large bowl and set aside.
 # Melt the butter in a pan over medium heat.
@@ -24,4 +22,4 @@ Directions
 # Use an immersion blender to puree 1/4 of the corn mixture.
 # Mix in the green onions, season with salt, pepper and chile powder to taste.
 
-Adapted from "Closet Cooking":http://www.closetcooking.com/2011/09/maque-choux.html
+Adapted from "Closet Cooking":http://www.closetcooking.com/2011/09/maque-choux.html.
