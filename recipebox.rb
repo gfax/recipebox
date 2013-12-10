@@ -1,15 +1,6 @@
-require 'sinatra'
-require 'coffee-script'
-require 'fileutils'
-require 'redcloth'
-require 'sass'
-require 'slim'
-require 'xml-sitemap'
-
-
-### Configuration ###
 class RecipeBox < Sinatra::Base
 
+  ### Configuration ###
   SiteName = '#gfax'
   SiteTitle = 'gfax'
   PagesFolder = Dir.pwd + '/views/recipes/'

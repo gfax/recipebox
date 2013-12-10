@@ -17,3 +17,11 @@ Since I don't use markdown, here is an example markdown page:
     +  Profit
 
 Save as `views/recipes/markdown-soup.md` and let the index page auto-sort for you.
+
+###Up and Running
+
+Modify unicorn.rb to suit your needs then run the commands:
+    bundle install
+    bundle exec unicorn -c unicorn.rb
+
+Modify recipebox.rb to set your app name and environment. Yeeeeeppp.
