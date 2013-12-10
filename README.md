@@ -20,8 +20,9 @@ Save as `views/recipes/markdown-soup.md` and let the index page auto-sort for yo
 
 ###Up and Running
 
-Modify unicorn.rb to suit your needs then run the commands:
+Modify `unicorn.rb` to suit your needs then run the commands:
+
     bundle install
     bundle exec unicorn -c unicorn.rb
 
-Modify recipebox.rb to set your app name and environment. Yeeeeeppp.
+Modify `recipebox.rb` to set your app name and environment. Yeeeeeppp.
