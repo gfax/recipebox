@@ -1,0 +1,43 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    RedCloth (4.2.9)
+    builder (3.2.2)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.6.3)
+    execjs (2.0.2)
+    kgio (2.8.1)
+    rack (1.5.2)
+    rack-protection (1.5.1)
+      rack
+    raindrops (0.12.0)
+    sass (3.2.12)
+    sinatra (1.4.4)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    slim (2.0.2)
+      temple (~> 0.6.6)
+      tilt (>= 1.3.3, < 2.1)
+    temple (0.6.7)
+    tilt (1.4.1)
+    unicorn (4.7.0)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+    xml-sitemap (1.3.3)
+      builder (>= 2.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  RedCloth
+  coffee-script
+  sass
+  sinatra (~> 1.4.4)
+  slim
+  unicorn
+  xml-sitemap
