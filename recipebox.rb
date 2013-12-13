@@ -42,19 +42,21 @@ class RecipeBox < Sinatra::Base
     return nil
   end
 
-  def hash_pages(folder=PagesFolder+'*/')
-    # List used for recipe categories.
-    a = Dir[folder].map { |f| File.basename(f) }
+  def hash_pages(folder=PagesFolder)
+    # Array of recipe categories.
+    a = Dir.glob(folder + '**/').map { |f| f.sub(folder, '').chop }
+    # Remove root directory. We'll manually add this on at the end.
+    a.shift
     # Create a hash to sort recipes in.
     h = {}
     # Start with recipes in each sub-directories.
     a.each do |e| 
-      h[e] = Dir[PagesFolder + e + '/*'].select { |f| not File.directory? f }
-      h[e].map! { |f| File.basename(f).chomp(File.extname(f)) }.sort!
+      h[e] = Dir[folder + e + '/*'].select { |f| not File.directory? f }
+      h[e].map! { |f| File.basename(f, File.extname(f)) }.sort!
     end
-    # Category for recipes not in subfolders:
-    h['misc'] = Dir[PagesFolder + '*'].select { |f| not File.directory? f }
-    h['misc'].map! { |f| File.basename(f).chomp(File.extname(f)) }.sort!
+    # Category for pages in the root directory:
+    h['misc'] = Dir[folder + '*'].select { |f| not File.directory? f }
+    h['misc'].map! { |f| File.basename(f, File.extname(f)) }.sort!
     return h
   end
 
@@ -96,14 +98,14 @@ class RecipeBox < Sinatra::Base
                  request.host_with_port
                end
     map = XmlSitemap::Map.new(hostname, :root => false) do |m|
-      # Add subdomains.
-      Dir[PagesFolder + "*.*"].each do |f|
-        if File.basename(f) =~ /\.(md|textile)/
-          # Don't add the index page since '/' is already added by default.
-          next if File.basename(f) =~ /^index.(md|textile)/
-          # Add the hostname + base filename to sitemap's urls.
-          # This assumes a flat file structure and no pages in subdirectories.
-          m.add File.basename(f).chomp(File.extname(f))
+      # Manually add urls:
+      # [ "http://example.org/about", "http://example.org/news" ].each { |e| m.add e }
+      hash_pages.each_pair do |k, v|
+        if k == 'misc'
+          # Top-level pages; just need the files' basenames.
+          v.each { |e| m.add e }
+        else
+          v.each { |e| m.add k + '/' + e }
         end
       end
     end
