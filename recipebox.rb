@@ -3,8 +3,8 @@ class RecipeBox < Sinatra::Base
   ### Configuration ###
   SiteName = '#gfax'
   SiteTitle = 'gfax'
-  PagesFolder = Dir.pwd + '/views/recipes/'
-  ViewsFolder = Dir.pwd + '/views'
+  PagesFolder = File.dirname(__FILE__) + '/views/recipes/'
+  ViewsFolder = File.dirname(__FILE__) + '/views'
  
   #set :environment, :production # enables caching
   set :markdown,
