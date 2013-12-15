@@ -25,4 +25,36 @@ Modify `unicorn.rb` to suit your needs then run the commands:
     bundle install
     bundle exec unicorn -c unicorn.rb
 
-Modify `recipebox.rb` to set your app name and environment. Yeeeeeppp.
+Modify `recipebox.rb` to set your app name and environment.
+
+###Caching and Nginx
+
+When in a production environment, the app will write static .html versions of the index and sub-pages to a folder `.cache`. The sass handler should take care of the stylesheets for you automatically. Otherwise, drop your static css files in the public folder. Though very rudimentary, this will bypass routing through unicorn for repeating requests, and you can clear the cache by deleting `.cache` or any file in it.
+Here's a basic config pointing to the cache folder in Nginx:
+    ### Recipebox App ###
+    upstream unicorn_recipebox {
+      server unix:/srv/recipebox/unicorn.sock
+        fail_timeout=0;
+    }
+    server {
+      access_log  logs/recipebox.access_log main;
+      error_log   logs/recipebox.error_log info;
+      listen 80;
+      server_name r.gfax.ch;
+      root /srv/recipebox;
+      location @app {
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $http_host;
+        proxy_redirect off;
+        # Pass to the upstream unicorn server mentioned above.
+        proxy_pass http://unicorn_recipebox;
+      }
+      location = / {
+        try_files /.cache/index.html /public/index.html @app;
+      }
+      location / {
+        try_files /.cache/$uri /.cache/$uri.html /public/$uri /public/$uri.html @app;
+      } 
+    } 
+
+Yeeeeeppp.
