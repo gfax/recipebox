@@ -1,22 +1,7 @@
 recipebox
 =========
 
-Sinatra app for [r.gfax.ch](http://r.gfax.ch). App uses [slim](http://slim-lang.com/) for templating, and renders either [textile](http://redcloth.org/try-redcloth/) or markdown for the recipe pages. See `views/recipes` for folder hierarchy and examples using textile.
-
-Since I don't use markdown, here is an example markdown page:
-
-    <!-- 1267666404 (This line is for unix timestamp to use as a post date, but completely optional.) -->
-    ## Markdown Soup
-
-    * 1 tsp salt
-    * 1 Tbsp ruby
-    * 1 magic, zest and juice
-
-    + Combine ingredients
-    + ???
-    +  Profit
-
-Save as `views/recipes/markdown-soup.md` and let the index page auto-sort for you.
+Sinatra app for [r.gfax.ch](http://r.gfax.ch). This app caches files written in [textile](http://redcloth.org/try-redcloth/) and markdown for a quick database-less website -- written for those that want a small site or blog with git version control. This app uses [slim](http://slim-lang.com/) for templating and purebred sass syntax for the stylesheets.
 
 ###Up and Running
 
@@ -27,9 +12,27 @@ Modify `unicorn.rb` to suit your needs then run the commands:
 
 Modify `recipebox.rb` to set your app name and environment.
 
+
+###Example Page
+
+See `views/recipes` for folder hierarchy and examples using textile. Since I personally don't use markdown, here is an example markdown page:
+
+    <!-- 1267666404 (This line is for adding a unix timestamp to use as a post date, but completely optional.) -->
+    ## Markdown Soup
+
+    * 1 tsp salt
+    * 1 Tbsp ruby
+    * 1 magic, zest and juice
+
+    + Combine ingredients
+    + ???
+    +  Profit
+
+Copy the code above into a new file and save as `views/recipes/markdown-soup.md` and let the main page auto-sort the new recipe for you.
+
 ###Caching and Nginx
 
-When in a production environment, the app will write static .html versions of the index and sub-pages to a folder `.cache`. The sass handler should take care of the stylesheets for you automatically. Otherwise, drop your static css files in the public folder. Though very rudimentary, this will bypass routing through unicorn for repeating requests, and you can clear the cache by deleting `.cache` or any file in it.
+When in a production environment, the app will write html files of the index and sub-pages to a folder called `.cache` in the app root. The sass handler should take care of the stylesheets for you automatically. Otherwise, drop static css files in the public folder. Though very rudimentary, this will bypass routing through unicorn for repeating requests, and you can clear the cache by deleting `.cache` or any file in it.
 Here's a basic config pointing to the cache folder in Nginx:
 
     ### Recipebox App ###
