@@ -31,6 +31,7 @@ Modify `recipebox.rb` to set your app name and environment.
 
 When in a production environment, the app will write static .html versions of the index and sub-pages to a folder `.cache`. The sass handler should take care of the stylesheets for you automatically. Otherwise, drop your static css files in the public folder. Though very rudimentary, this will bypass routing through unicorn for repeating requests, and you can clear the cache by deleting `.cache` or any file in it.
 Here's a basic config pointing to the cache folder in Nginx:
+
     ### Recipebox App ###
     upstream unicorn_recipebox {
       server unix:/srv/recipebox/unicorn.sock
