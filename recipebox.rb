@@ -1,3 +1,4 @@
+# coding: UTF-8
 class RecipeBox < Sinatra::Base
 
   ### Configuration ###
@@ -7,6 +8,7 @@ class RecipeBox < Sinatra::Base
   ViewsFolder = File.dirname(__FILE__) + '/views'
  
   #set :environment, :production # enables caching
+
   set :markdown,
     :layout_engine => :slim,
     :layout => :layout
@@ -98,7 +100,7 @@ class RecipeBox < Sinatra::Base
                  request.host_with_port
                end
     map = XmlSitemap::Map.new(hostname, :root => false) do |m|
-      # Manually add urls:
+      # Manually add static urls to the sitemap:
       # [ "http://example.org/about", "http://example.org/news" ].each { |e| m.add e }
       hash_pages.each_pair do |k, v|
         if k == 'misc'
