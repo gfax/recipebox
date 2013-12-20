@@ -1,4 +1,5 @@
-<notextile><!-- 1385949411 --></notextile>
+<notextile><!-- 1385949411 -->
+<!-- ...still a work in progress --></notextile>
 h2. Squash Pizza
 
 * 1 cup thinly sliced onion

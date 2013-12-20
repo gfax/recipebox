@@ -1,4 +1,5 @@
-<notextile><!-- 1385940807 --></notextile>
+<notextile><!-- 1385940807 -->
+<!-- spread for your favorite deli or grilled sandwich --></notextile>
 h2. Asparagus Pesto
 
 * 1 cup asparagus, blanched
@@ -11,6 +12,5 @@ h2. Asparagus Pesto
 * salt and pepper to taste
 
 Place everything into a food processor and purée.
-Spread on your favorite deli and grilled sandwich in place of other condiments.
 <br>
 Taken from "Kevin Lynch":http://wisconsincheesetalk.com/2011/04/25/asparagus-pesto-grilled-cheese-sandwich/.

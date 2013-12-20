@@ -1,11 +1,12 @@
-<notextile><!-- 1386213908 --></notextile>
+<notextile><!-- 1386213908 -->
+<!-- savory, breaded eggplant --></notextile>
 h2. Baked Eggplant Parmesan
 
 * 3 eggplant, thinly sliced and optionally peeled
 * 2 eggs, beaten
 * 4 cups Italian-seasoned bread crumbs
 * ~6 cups marinara sauce, divided
-* 1 (16 oz) package mozzarella cheese, shredded and divided
+* 16 oz Mozzarella cheese, shredded and divided
 * 1/2 cup grated Parmesan cheese, divided
 * 1/2 tsp dried basil
 
