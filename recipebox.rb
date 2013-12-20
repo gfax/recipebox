@@ -33,15 +33,28 @@ class RecipeBox < Sinatra::Base
     return text
   end
 
-  def readline(file=nil)
+  def readtime(file=nil)
     # Read unix timestamp from first line of file to get post date.
     if file
       file = PagesFolder + '/' + file
-      line = File.open(file, &:readline).split[1].to_i
-      return nil if line.zero?
-      return Time.at(line).to_s
+      timestamp = File.open(file, &:readline).split[1].to_i
+      return nil if timestamp.zero?
+      return Time.at(timestamp).to_s
     end
     return nil
+  end
+
+  def readmeta(file=nil)
+    meta = {}
+    if file
+      lines = File.open(file)
+      meta[:name] = File.basename(file, File.extname(file))
+      meta[:date] = lines.gets.split[1].to_i
+      meta[:date] = meta[:date].zero? ? nil : Time.at(meta[:date]).to_s
+      meta[:desc] = lines.gets.split[0..-1]
+      meta[:desc] = meta[:desc].include?('<!--') ? meta[:desc][1..-2].join(' ').chomp : nil
+    end
+    return meta
   end
 
   def hash_pages(folder=PagesFolder)
@@ -53,12 +66,13 @@ class RecipeBox < Sinatra::Base
     h = {}
     # Start with recipes in each sub-directories.
     a.each do |e| 
-      h[e] = Dir[folder + e + '/*'].select { |f| not File.directory? f }
-      h[e].map! { |f| File.basename(f, File.extname(f)) }.sort!
+      h[e] = Dir[folder + e + '/*'].select { |f| not File.directory? f }.sort
+      # Collect html comments into sub-hashes.
+      h[e].map! { |filepath| readmeta(filepath) }
     end
     # Category for pages in the root directory:
-    h['misc'] = Dir[folder + '*'].select { |f| not File.directory? f }
-    h['misc'].map! { |f| File.basename(f, File.extname(f)) }.sort!
+    h['misc'] = Dir[folder + '*'].select { |f| not File.directory? f }.sort
+    h['misc'].map! { |filepath| readmeta(filepath) }
     return h
   end
 
@@ -118,11 +132,11 @@ class RecipeBox < Sinatra::Base
 
   get '/*' do
     begin
-      @date = readline params[:splat].first + '.textile'
+      @date = readtime params[:splat].first + '.textile'
       item = textile "recipes/#{params[:splat].first}".to_sym
     rescue Errno::ENOENT
       begin
-        @date = readline params[:splat].first + '.md'
+        @date = readtime params[:splat].first + '.md'
         item = markdown "recipes/#{params[:splat].first}".to_sym
       rescue Errno::ENOENT
       end

@@ -11,7 +11,11 @@
   - for page in categories.last do
     - if categories.first == 'misc'
       li
-        a href="/#{page}" #{page.gsub('-',' ').split.map(&:capitalize)*' '}
+        a href="/#{page[:name]}" #{page[:name].gsub('-',' ').split.map(&:capitalize)*' '}
+        - if page[:desc]
+          | - #{page[:desc]}
     - else
       li
-        a href="/#{categories.first}/#{page}" #{page.gsub('-',' ').split.map(&:capitalize)*' '}
+        a href="/#{categories.first}/#{page[:name]}" #{page[:name].gsub('-',' ').split.map(&:capitalize)*' '}
+        - if page[:desc]
+          | - #{page[:desc]}
