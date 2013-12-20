@@ -39,7 +39,7 @@ class RecipeBox < Sinatra::Base
       file = PagesFolder + '/' + file
       timestamp = File.open(file, &:readline).split[1].to_i
       return nil if timestamp.zero?
-      return Time.at(timestamp).to_s
+      return Time.at(timestamp).strftime "%Y-%m-%d %H:%M ET"
     end
     return nil
   end
@@ -50,7 +50,7 @@ class RecipeBox < Sinatra::Base
       lines = File.open(file)
       meta[:name] = File.basename(file, File.extname(file))
       meta[:date] = lines.gets.split[1].to_i
-      meta[:date] = meta[:date].zero? ? nil : Time.at(meta[:date]).to_s
+      meta[:date] = meta[:date].zero? ? nil : Time.at(meta[:date]).strftime("%y-%m")
       meta[:desc] = lines.gets.split[0..-1]
       meta[:desc] = meta[:desc].include?('<!--') ? meta[:desc][1..-2].join(' ').chomp : nil
     end
