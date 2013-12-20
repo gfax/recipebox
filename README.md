@@ -18,6 +18,7 @@ Modify `recipebox.rb` to set your app name and environment.
 See `views/recipes` for folder hierarchy and examples using textile. Since I personally don't use markdown, here is an example markdown page:
 
     <!-- 1267666404 (This line is for adding a unix timestamp to use as a post date, but completely optional.) -->
+    <!-- This second line is for the page description, but assumes you put a timestamp first. -->
     ## Markdown Soup
 
     * 1 tsp salt
@@ -60,5 +61,9 @@ Here's a basic config pointing to the cache folder in Nginx:
         try_files /.cache/$uri /.cache/$uri.html /public/$uri /public/$uri.html @app;
       } 
     } 
+
+###What's the command for unix time again?
+    date +%s
+
 
 Yeeeeeppp.
