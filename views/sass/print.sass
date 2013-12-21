@@ -1,0 +1,49 @@
+@import "mixins.sass"
+
+// Variables
+
+$container-width: 100%
+
+// Reset
+
+*
+  background: white
+  background-image: none
+
+// Typography
+
+body
+  font: ($base-font * 1.1) Georgia, serif
+  color: black
+
+h1, h2, h3
+  color: black
+h1
+  @include adjust-font-size($h1-scale, 0.7, 0.5)
+h2
+  @include adjust-font-size($h2-scale, 1.6, 0.6)
+h3
+  @include adjust-font-size($h3-scale, 1.7, 0.6)
+h4
+  @include adjust-font-size($h4-scale, 2.1, 0.1)
+
+blockquote
+  color: black
+  
+// The visuals
+
+a
+  border-bottom: solid
+  border-bottom-color: gray
+  border-bottom-width: 1px
+  text-decoration: none
+  color: black
+  @include transition(color 0.25s 0 ease)
+
+// Layout
+
+#container
+  width: $container-width
+  max-width: 100%
+  min-width: 22em
+  margin: 0 1em 0 1em

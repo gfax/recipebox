@@ -3,9 +3,8 @@ class RecipeBox < Sinatra::Base
 
   ### Configuration ###
   SiteName = '#gfax'
-  SiteTitle = 'gfax'
+  SiteTitle = 'gfax - Recipebox'
   PagesFolder = File.dirname(__FILE__) + '/views/recipes/'
-  ViewsFolder = File.dirname(__FILE__) + '/views'
  
   #set :environment, :production # enables caching
 
@@ -130,7 +129,26 @@ class RecipeBox < Sinatra::Base
     map.render
   end
 
+  get '/*/print' do
+    begin
+      item = textile "recipes/#{params[:splat].first}".to_sym, :layout => :print_layout
+    rescue Errno::ENOENT
+      begin
+        item = markdown "recipes/#{params[:splat].first}".to_sym, :layout => :print_layout
+      rescue Errno::ENOENT
+      end
+    end
+    if item and settings.production?
+      cache item
+    elsif item
+      item
+    else
+      raise Sinatra::NotFound
+    end
+  end
+
   get '/*' do
+    @print_url = params[:splat].first + '/print'
     begin
       @date = readtime params[:splat].first + '.textile'
       item = textile "recipes/#{params[:splat].first}".to_sym
@@ -141,12 +159,10 @@ class RecipeBox < Sinatra::Base
       rescue Errno::ENOENT
       end
     end
-    if item
-      if settings.production?
-        cache item
-      else
-        item
-      end
+    if item and settings.production?
+      cache item
+    elsif item
+      item
     else
       raise Sinatra::NotFound
     end

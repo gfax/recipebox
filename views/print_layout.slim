@@ -1,0 +1,12 @@
+/ This is the print template file.
+html
+  head
+    title #{SiteTitle}
+    link rel="stylesheet" href="/master.css"
+    link rel="stylesheet" href="/print.css"
+
+  body
+    #container
+     == yield
+
+  script window.print();
