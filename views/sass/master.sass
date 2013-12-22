@@ -3,13 +3,18 @@
 
 // Variables
 
-$background-image: "bg_white.png"
-$border-style: 1px dashed $border-color
-$container-width: 79% //
+$background-image: "bg_pods.png"
+$container-width: 79%
 $content-width: 79%
 $topbar-width: 100%
 
-// Fonts
+// Reset
+
+*
+  margin: 0
+  padding: 0
+
+// Typography
 
 @font-face
   font-family: "PT-Sans"
@@ -17,24 +22,16 @@ $topbar-width: 100%
   src: local('PTS55F')
   src: url('/PTS55F.ttf') format('truetype')
 
-// Reset
-
-*
-  background: $background-color
-  background-image: url($background-image)
-  //background-repeat: no-repeat
-  margin: 0
-  padding: 0
-
-// Typography
-
 @mixin text-shadow
   text-shadow: 0 2px 3px $font-shadow
 
 body
+  background: $background-color
+  background-image: url($background-image)
+  background-repeat: repeat-y
+  color: $base-text-color
   font: ($base-font * 1.05) Georgia, serif
   line-height: $vertical-rhythm
-  color: $base-color
 
 h1, h2, h3, h4, h5, h6
   font-family: PT-Sans, Verdana, sans-serif
@@ -60,7 +57,7 @@ blockquote
   margin: $base-vertical-margin 0
   padding: 0 $base-vertical-margin
   font-style: italic
-  color: $base-color + #555
+  color: $base-text-color + #555
   
 pre
   padding: ($vertical-rhythm / 2) 1em
@@ -89,36 +86,38 @@ a
 // Layout
 
 #topbar
+  background: $topbar-background-color
   border-width: 1px
   font-family: Verdana, Helvetica, sans-serif
   font-size: 1.2em
   font-weight: none
-  height: 2em
-  margin: 0em auto 0
+  height: 1.8em
+  margin: 0 auto 0
   text-align: center
   width: $topbar-width
-  min-width: 28em
+  min-width: 34em
+  padding-top: .2em
+  a, li, ul
+    background: $topbar-background-color
   a
-    color: $topbar-text
+    color: $topbar-text-color
     &:hover
-      color: $topbar-hover
-      border-bottom-color: $topbar-hover
+      color: $topbar-hover-color
+      border-bottom-color: $topbar-hover-color
   li
     display: inline
     list-style: none
     padding-right: .3em
   li.first
     a
-      color: $topbar-hover
+      color: $topbar-hover-color
   ul
     margin: 0
-    padding-left: .3em
-    padding-top: .3em
 
 #container
   width: $container-width
   max-width: 58em
-  min-width: 42em
+  min-width: 34em
   margin: 0 auto
   padding: 0 1em 0 1em
 
@@ -136,7 +135,7 @@ a
     code
       padding: 1px 3px
     pre
-      border-left: $border-style
+      border-left: 1px dashed $border-color
       code
         padding: 0
     table, td, th
