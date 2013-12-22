@@ -105,7 +105,17 @@ class RecipeBox < Sinatra::Base
     end
   end
 
-  ### Generate Sitemap ###
+  # Generate robots.txt:
+  get '/robots.txt' do
+    hostname = case request.port
+               when 80 then 'http://' + request.host
+               when 443 then 'https://' + request.host
+               else 'http://' + request.host_with_port
+               end
+    "Sitemap: #{hostname}/sitemap.xml"
+  end
+
+  # Generate sitemap:
   get '/sitemap.xml' do
     hostname = if request.port == 80 or request.port == 443
                  request.host
@@ -129,6 +139,7 @@ class RecipeBox < Sinatra::Base
     map.render
   end
 
+  # Print view:
   get '/*/print' do
     begin
       item = textile "recipes/#{params[:splat].first}".to_sym, :layout => :print_layout
