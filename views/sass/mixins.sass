@@ -26,11 +26,23 @@ $base-vertical-margin: 1.75em
     line-height: $line-height
 
   font-size: 100% * $scale
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3)
+    font-size: 200% * $scale
+  @media only screen and (-o-min-device-pixel-ratio: 13/10)
+    font-size: 200% * $scale
+  @media only screen and (min-resolution: 120dpi)
+    font-size: 200% * $scale
 
-@mixin border-radius($radius)
-  -webkit-border-radius: $radius
-  -moz-border-radius: $radius
-  border-radius: $radius
+@mixin border-radius($top-radius: 0, $bottom-radius: 10px)
+  -webkit-border-radius: $top-radius
+  -moz-border-radius: $top-radius
+  border-top-right-radius: $top-radius
+  border-top-left-radius: $top-radius
+
+  -webkit-border-bottom: $bottom-radius
+  -moz-border-radius-bottom: $bottom-radius
+  border-bottom-right-radius: $bottom-radius
+  border-bottom-left-radius: $bottom-radius
 
 @mixin transition($definition)
   -moz-transition: $definition
