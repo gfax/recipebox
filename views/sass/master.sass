@@ -4,9 +4,8 @@
 // Variables
 
 $background-image: "bg_pods.png"
-$container-width: 79%
-$content-width: 79%
 $topbar-width: 100%
+$container-width: 80%
 
 // Reset
 
@@ -30,7 +29,7 @@ body
   background-image: url($background-image)
   background-repeat: repeat-y
   color: $base-text-color
-  font: Georgia, serif
+  font-family: Georgia, serif
   line-height: $vertical-rhythm
   @media only screen and (max-width: 600px)
     background-image: none
@@ -115,6 +114,8 @@ a
 
 #container
   width: $container-width
+  @media only screen and (max-width: 600px)
+    width: 100%
   max-width: 58em
   min-width: 32em
   margin: 0 auto
@@ -123,8 +124,11 @@ a
   #content
     @include adjust-font-size(0.9, 0, 0)
     min-width: 21em
-    width: $content-width
+    max-width: 100%
+    width: $container-width
     float: right
+    @media only screen and (max-width: 600px)
+      float: none
     padding: 0 0 0 0
     img   
       border-color: $border-color
