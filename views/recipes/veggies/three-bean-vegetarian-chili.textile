@@ -26,4 +26,4 @@ h2. Three-bean Vegetarian Chili
 # Add bell peppers, broth, squash, and tomatoes; bring to a simmer. Cook 20 minutes, stirring occasionally.
 # Add beans; simmer 25 minutes or until slightly thick, stirring occasionally. Sprinkle with green onions.
 
-"Source":http://www.myrecipes.com/recipe/three-bean-vegetarian-chili-10000001949760/
+Taken from "MyRecipes":http://www.myrecipes.com/recipe/three-bean-vegetarian-chili-10000001949760/.
