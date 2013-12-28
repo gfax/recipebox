@@ -5,7 +5,7 @@
 - for categories in @recipes do
   - unless categories.last.empty?
     - if categories.first == 'misc'
-      h2 The Rest
+      h2 Other Stuff
     - else
       h2 #{categories.first.gsub('-',' ').split.map(&:capitalize)*' '}
   - for page in categories.last do

@@ -1,0 +1,9 @@
+h2. About Recipebox
+
+This site is an online recipe book for me and my mom to stay organized and to share recipes with others. Unlike recipe blog sites or recipe databases, this is strictly recipes to keep things minimal and make navigating or reading off recipes during preparation simpler. Recipes that are taken from other sources are credited when possible. All original recipes fall under the "free license":https://www.gnu.org/licenses/lgpl.html of this "site's software":https://github.com/gfax/recipebox.
+
+h3. People I Follow
+
+* "Kevin Lynch":http://www.closetcooking.com/ -  Creative twists on American traditional dishes. I hate boring food.
+* "Sasha Martin":http://globaltableadventure.com - Cooking food from every country without leaving Oklahoma.
+* "Karina Allrich":http://glutenfreegoddess.blogspot.com - Source that helped me "de-gluten" some recipes without compromising on flavor or texture.
