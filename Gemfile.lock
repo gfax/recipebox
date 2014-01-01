@@ -13,6 +13,7 @@ GEM
     rack-protection (1.5.1)
       rack
     raindrops (0.12.0)
+    redcarpet (3.0.0)
     sass (3.2.12)
     sinatra (1.4.4)
       rack (~> 1.4)
@@ -36,6 +37,7 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   coffee-script
+  redcarpet
   sass
   sinatra (~> 1.4.4)
   slim
