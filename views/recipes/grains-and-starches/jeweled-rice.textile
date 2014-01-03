@@ -5,7 +5,7 @@ h2. Jeweled Rice
 * 1/4 cup almonds, toasted and slivered
 * 2 cups basmati rice, rinsed and soaked
 * 2 oranges, juiced and zested
-* 1/2 cup sugar
+* 1/4 cup sugar
 * 1/2 cup water
 * 2 medium carrots, peeled, cut into matchstick-size pieces
 * 1/4 cup dried barberries or 1/2 cup dried cranberries, soaked and drained
@@ -30,4 +30,4 @@ h2. Jeweled Rice
 # Cook until pot begins to steam, 5–8 minutes. Reduce heat to very low and cook, without stirring, until rice is tender and bottom layer of rice is browned and crisp, 30–40 minutes.
 # Scoop rice into a wide serving bowl, breaking bottom crust into pieces.
 
-Taken from "Bon Appétit":http://www.bonappetit.com/recipe/jeweled-rice.
+Adapted from "Bon Appétit":http://www.bonappetit.com/recipe/jeweled-rice.
