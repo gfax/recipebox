@@ -19,7 +19,7 @@ See `views/recipes` for folder hierarchy and examples using textile. Since I per
 
     ---
     title: Markdown Soup (If you don't specify a title, it will be extrapolated from the filename.)
-    date: 1267666404 (Date can be plaintext or in the form of a unix timestamp
+    date: 1267666404 (Date can be plaintext or in the form of a unix timestamp. If no date is specified, a date is extrapolated from the file's creation timestamp.)
     desc: This is the best soup
     ---
 
