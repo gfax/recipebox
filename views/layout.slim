@@ -1,7 +1,10 @@
 / This is the main template file.
 html
   head
-    title #{SiteTitle}
+    - if @meta
+      title gfax - #{@meta['title']}
+    - else
+      title #{SiteTitle}
     link rel="stylesheet" href="/master.css"
 
   body
@@ -17,12 +20,20 @@ html
     #container
       #content
         == yield
+        - if @subpages
+          - if not @subpages.empty?
+            h3 Subpages:
+            ul
+            - for page in @subpages
+              li
+                a href="/#{page['filepath']}" #{page['title']}
         - if @print_url
           | (
           b
             a href="/#{@print_url}" Print this page.
           | )
     footer
-      - if @date
-        | Posted #{@date}. 
+      - if @meta
+        - if @meta['date']
+          | Posted #{@meta['date']}. 
       p Copyright © #{Time.now.year} #{SiteName}

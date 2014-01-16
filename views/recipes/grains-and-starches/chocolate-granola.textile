@@ -1,5 +1,8 @@
-<notextile><!-- 1386045872 -->
-<!-- serve with almond milk for breakfast or as an afternoon snack --></notextile>
+---
+date: 1386045872
+desc: serve with almond milk for breakfast or as an afternoon snack
+---
+
 h2. Chocolate Granola
 
 * 1 (18 oz) can of oats

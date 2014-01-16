@@ -1,12 +1,21 @@
-/ This is the print template file.
+/ This is the main template file.
 html
   head
-    title #{SiteTitle}
+    - if @meta
+      title gfax - #{@meta['title']}
+    - else
+      title #{SiteTitle}
     link rel="stylesheet" href="/master.css"
     link rel="stylesheet" href="/print.css"
 
   body
     #container
-     == yield
-
-  script window.print();
+      #content
+        == yield
+        - if @subpages
+          - if not @subpages.empty?
+            h3 Subpages:
+            ul
+            - for page in @subpages
+              li
+                a href="/#{page['filepath']}" #{page['title']}

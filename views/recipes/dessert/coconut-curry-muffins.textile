@@ -1,5 +1,8 @@
-<notextile><!-- 1386045872 -->
-<!-- gluten free, low-carb muffins with a sweet, salty taste --></notextile>
+---
+date: 1386045872
+desc: gluten free, low-carb muffins with a sweet, salty taste
+---
+
 h2. Coconut Curry Muffins
 
 *Topping:*

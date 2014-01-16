@@ -1,5 +1,8 @@
-<notextile><!-- 1386213908 -->
-<!-- sweet and salty --></notextile>
+---
+date: 1386213908
+desc: sweet and salty
+---
+
 h2. Sweet Potato Burrito Mix
 
 * 1 tablespoon vegetable oil

@@ -1,5 +1,8 @@
-<notextile><!-- 1385915286 -->
-<!-- the gfax guide to salsa --></notextile>
+---
+date: 1385915286
+desc: the gfax guide to salsa
+---
+
 h2. Salsa
 
 * 1 (28 oz) can diced tomatoes (drained)

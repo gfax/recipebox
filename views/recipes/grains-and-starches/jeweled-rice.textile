@@ -1,5 +1,8 @@
-<notextile><!-- 1387686566 -->
-<!-- sweet Persian rice --></notextile>
+---
+date: 1387686566
+desc: sweet Persian rice
+---
+
 h2. Jeweled Rice
 * 1/4 cup non-salted pistachios, toasted and slivered
 * 1/4 cup almonds, toasted and slivered

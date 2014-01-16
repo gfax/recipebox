@@ -32,46 +32,48 @@ class RecipeBox < Sinatra::Base
     return text
   end
 
-  def readtime(file=nil)
-    # Read unix timestamp from first line of file to get post date.
-    if file
-      file = PagesFolder + '/' + file
-      timestamp = File.open(file, &:readline).split[1].to_i
-      return nil if timestamp.zero?
-      return Time.at(timestamp).strftime "%Y-%m-%d %H:%M ET"
-    end
-    return nil
-  end
-
   def readmeta(file=nil)
+    return {} unless file
+    n = PagesFolder.length
     meta = {}
-    if file
-      lines = File.open(file)
-      meta[:name] = File.basename(file, File.extname(file))
-      meta[:date] = lines.gets.split[1].to_i
-      meta[:date] = meta[:date].zero? ? nil : Time.at(meta[:date]).strftime("%y-%m")
-      meta[:desc] = lines.gets.split[0..-1]
-      meta[:desc] = meta[:desc].include?('<!--') ? meta[:desc][1..-2].join(' ').chomp : nil
+    begin 
+      page = Preamble.load(file)
+      meta = page.first
+      meta['body'] = page[1]
+      meta['tags'] = [*meta['tags']] if meta['tags']
+    rescue RuntimeError
+    end
+    meta['filepath'] = file[n..-1].chomp File.extname(file)
+    if meta['date']
+      # Extract date from file timestamp and convert unix timestamps.
+      t = Time.at(meta['date'].to_s.to_i)
+      meta['date'] = t.strftime '%y-%m' unless t.year <= 1969
+    else
+      meta['date'] = File.new(file).ctime.strftime '%m-%m'
+    end
+    unless meta['title']
+      meta['title'] = File.basename(file, File.extname(file))
+      meta['title'] = meta['title'].gsub(/(\-|_)/,' ').split.map(&:capitalize)*' '
     end
     return meta
   end
 
   def hash_pages(folder=PagesFolder)
-    # Array of recipe categories.
+    # Array of category folders.
     a = Dir.glob(folder + '**/').map { |f| f.sub(folder, '').chop }
     # Remove root directory. We'll manually add this on at the end.
     a.shift
-    # Create a hash to sort recipes in.
+    # Create a hash to sort pages in.
     h = {}
-    # Start with recipes in each sub-directories.
+    # Start with pages in each sub-directories.
     a.each do |e| 
-      h[e] = Dir[folder + e + '/*'].select { |f| not File.directory? f }.sort
-      # Collect html comments into sub-hashes.
-      h[e].map! { |filepath| readmeta(filepath) }
+      h[e] = Dir[folder + e + '/*'].select { |f| not File.directory? f }
+      # Collect page data into sub-hashes.
+      h[e].map! { |filepath| readmeta(filepath) }.sort_by!{ |h| h['title'] }
     end
     # Category for pages in the root directory:
-    h['misc'] = Dir[folder + '*'].select { |f| not File.directory? f }.sort
-    h['misc'].map! { |filepath| readmeta(filepath) }
+    h['root'] = Dir[folder + '*'].select { |f| not File.directory? f }.sort
+    h['root'].map! { |filepath| readmeta(filepath) }.sort_by!{ |h| h['title'] }
     return h
   end
 
@@ -97,7 +99,7 @@ class RecipeBox < Sinatra::Base
 
   ### Routes ###
   get '/' do
-    @recipes = hash_pages
+    @pages = hash_pages
     if settings.production?
       cache slim :index
     else
@@ -126,7 +128,7 @@ class RecipeBox < Sinatra::Base
       # Manually add static urls to the sitemap:
       # [ "http://example.org/about", "http://example.org/news" ].each { |e| m.add e }
       hash_pages.each_pair do |k, v|
-        if k == 'misc'
+        if k == 'root'
           # Top-level pages; just need the files' basenames.
           v.each { |e| m.add e }
         else
@@ -141,18 +143,22 @@ class RecipeBox < Sinatra::Base
 
   # Print view:
   get '/*/print' do
+    filepath = PagesFolder + '/' + params[:splat].first
+    relative_filepath = File.basename(PagesFolder) + '/' + params[:splat].first
     begin
-      item = textile "recipes/#{params[:splat].first}".to_sym, :layout => :print_layout
+      @meta = readmeta(filepath + '.textile')
+      body = textile((@meta['body'] || relative_filepath.to_sym), :layout => :print_layout)
     rescue Errno::ENOENT
       begin
-        item = markdown "recipes/#{params[:splat].first}".to_sym, :layout => :print_layout
+        @meta = readmeta(filepath + '.md')
+        body = markdown((@meta['body'] || relative_filepath.to_sym), :layout => :print_layout)
       rescue Errno::ENOENT
       end
     end
-    if item and settings.production?
-      cache item
-    elsif item
-      item
+    if body and settings.production?
+      cache body
+    elsif body
+      body
     else
       raise Sinatra::NotFound
     end
@@ -160,27 +166,29 @@ class RecipeBox < Sinatra::Base
 
   get '/*' do
     @print_url = params[:splat].first + '/print'
+    filepath = PagesFolder + '/' + params[:splat].first
+    relative_filepath = File.basename(PagesFolder) + '/' + params[:splat].first
     begin
-      @date = readtime params[:splat].first + '.textile'
-      item = textile "recipes/#{params[:splat].first}".to_sym
+      @meta = readmeta(filepath + '.textile')
+      body = textile @meta['body'] || relative_filepath.to_sym
     rescue Errno::ENOENT
       begin
-        @date = readtime params[:splat].first + '.md'
-        item = markdown "recipes/#{params[:splat].first}".to_sym
+        @meta = readmeta(filepath + '.md')
+        body = markdown @meta['body'] || relative_filepath.to_sym
       rescue Errno::ENOENT
       end
     end
-    if item and settings.production?
-      cache item
-    elsif item
-      item
+    if body and settings.production?
+      cache body
+    elsif body
+      body
     else
       raise Sinatra::NotFound
     end
   end
 
   not_found do
-    @recipes = hash_pages
+    @pages = hash_pages
     if settings.production?
       redirect '/'
     else

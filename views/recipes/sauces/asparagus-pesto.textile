@@ -1,5 +1,8 @@
-<notextile><!-- 1385940807 -->
-<!-- spread for your favorite deli or grilled sandwich --></notextile>
+---
+date: 1385940807
+desc: spread for your favorite deli or grilled sandwich
+---
+
 h2. Asparagus Pesto
 
 * 1 cup asparagus, blanched

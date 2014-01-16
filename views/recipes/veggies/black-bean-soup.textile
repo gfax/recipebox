@@ -1,5 +1,8 @@
-<notextile><!-- 1388599956 -->
-<!-- south-western soup --></notextile>
+---
+date: 1388599956
+desc: south-western soup
+---
+
 h2. Black Bean Soup
 
 * 1 Tbsp olive oil

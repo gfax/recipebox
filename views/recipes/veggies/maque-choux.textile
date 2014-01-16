@@ -1,5 +1,8 @@
-<notextile><!-- 1385947297 -->
-<!-- creamy corn-based south-western dish --></notextile>
+---
+date: 1385947297
+desc: creamy corn-based south-western dish
+---
+
 h2. Maque Choux
 
 * 2 Tbsp butter or oil or bacon grease

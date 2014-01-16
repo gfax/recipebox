@@ -1,5 +1,8 @@
-<notextile><!-- 1385947297 -->
-<!-- mild white-bean chili with pumpkin spices --></notextile>
+---
+date: 1385947297
+desc: mild white-bean chili with pumpkin spices
+---
+
 h2. Pumpkin Turkey Chili
 
 * 1 Tbsp oil

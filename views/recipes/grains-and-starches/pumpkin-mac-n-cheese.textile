@@ -1,5 +1,8 @@
-<notextile><!-- 1385575953 -->
-<!-- sweet and savory --></notextile>
+---
+date: 1385575953
+desc: sweet and savory
+---
+
 h2. Pumpkin Mac 'n' Cheese
 
 * 1 pound of pumpkin/squash, peeled, seeded and cut into 1 inch cubes

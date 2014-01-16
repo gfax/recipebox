@@ -1,5 +1,8 @@
-<notextile><!-- 1388599956 -->
-<!-- curried vegetables in a tomato soup --></notextile>
+---
+date: 1388599956
+desc: curried vegetables in a tomato soup
+---
+
 h2. Quinoa Lentil Soup
 
 * 3 cups vegetable stock

@@ -1,5 +1,8 @@
-<notextile><!-- 1387068910 -->
-<!-- savory, moist, and golden-fried --></notextile>
+---
+date: 1387068910
+desc: savory, moist, and golden-fried
+---
+
 h2. Chickpea Cakes
 
 *Cake mix:*

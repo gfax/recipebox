@@ -1,5 +1,8 @@
-<notextile><!-- 1386023126 -->
-<!-- fried chicken and vegetables --></notextile>
+---
+date: 1386023126
+desc: fried chicken and vegetables
+---
+
 h2. Chicken Cacciatore
 
 * 1/4 cup all-purpose flour

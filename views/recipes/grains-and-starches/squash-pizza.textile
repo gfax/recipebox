@@ -1,5 +1,8 @@
-<notextile><!-- 1385949411 -->
-<!-- ...still a work in progress --></notextile>
+---
+date: 1385949411
+desc: ...still a work in progress
+---
+
 h2. Squash Pizza
 
 * 1 cup thinly sliced onion
@@ -7,7 +10,6 @@ h2. Squash Pizza
 * 1 tsp chopped fresh rosemary
 * salt and black pepper to taste
 * 3 tablespoons olive oil, divided
-* 1 (16 oz) package refrigerated pizza crust dough, divided
 * 1 Tbsp cornmeal
 * 2 Tbsp grated Asiago or Parmesan cheese
 

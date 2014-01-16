@@ -1,5 +1,8 @@
-<notextile><!-- 1387589261 -->
-<!-- rich, vegan, flourless, raw pie with a cheesecake-like texture --></notextile>
+---
+date: 1387589261
+desc: rich, vegan, flourless, raw pie with a cheesecake-like texture
+---
+
 h2. Cocoa Hazelnut Pie
 
 *Crust:*

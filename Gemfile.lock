@@ -9,6 +9,7 @@ GEM
     coffee-script-source (1.6.3)
     execjs (2.0.2)
     kgio (2.8.1)
+    preamble (0.0.2)
     rack (1.5.2)
     rack-protection (1.5.1)
       rack
@@ -37,6 +38,7 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   coffee-script
+  preamble
   redcarpet
   sass
   sinatra (~> 1.4.4)

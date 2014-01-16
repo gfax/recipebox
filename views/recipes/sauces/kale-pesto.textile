@@ -1,5 +1,8 @@
-<notextile><!-- 1385947297 -->
-<!-- spread for your vegetables or flat bread --></notextile>
+---
+date: 1385947297
+desc: spread for your vegetables or flat bread
+---
+
 h2. Kale Pesto
 
 * 4 cups kale, stems removed and coarsely chopped

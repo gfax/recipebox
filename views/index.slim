@@ -2,19 +2,16 @@
   br
   b #{@error}
 
-- for categories in @recipes do
+- for categories in @pages do
   - unless categories.last.empty?
-    - if categories.first == 'misc'
+    - if categories.first == 'root'
       h2 Other Stuff
     - else
       h2 #{categories.first.gsub('-',' ').split.map(&:capitalize)*' '}
   - for page in categories.last do
     li
-      - if page[:date]
-        | (#{page[:date]}) 
-      - if categories.first == 'misc'
-        a href="/#{page[:name]}" #{page[:name].gsub('-',' ').split.map(&:capitalize)*' '}
-      - else
-        a href="/#{categories.first}/#{page[:name]}" #{page[:name].gsub('-',' ').split.map(&:capitalize)*' '}
-      - if page[:desc]
-        |  - #{page[:desc]}
+      - if page['date']
+        | (#{page['date']}) 
+      a href="/#{page['filepath']}" #{page['title']}
+      - if page['desc']
+        |  - #{page['desc']}

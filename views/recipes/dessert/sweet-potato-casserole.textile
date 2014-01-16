@@ -1,5 +1,8 @@
-<notextile><!-- 1386018512 -->
-<!-- popular Thanksgiving dish --></notextile>
+---
+date: 1386018512
+desc: popular Thanksgiving dish
+---
+
 h2. Sweet Potato Casserole
 
 * 1 cup brown sugar

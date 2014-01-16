@@ -1,0 +1,18 @@
+---
+date: 1389304228
+desc: Japanese vegetable soup
+---
+
+h2. Miso Soup
+
+* 1 clove garlic
+* 15 oz soy bean sprouts, rinsed and drained
+* 4 cups water
+* 3 Tbsp miso paste
+* 3 green onions, sliced
+* 8 oz tofu, diced
+* 2 sheets seaweed, shredded
+
+# In a pot, add garlic and sprouts and cook until fragrant.
+# Add water and bring to a simmer. Whisk in the miso paste.
+# Add onions, tofu, and seaweed. Simmer for 10 minutes.

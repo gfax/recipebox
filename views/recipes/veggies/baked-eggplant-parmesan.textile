@@ -1,5 +1,8 @@
-<notextile><!-- 1386213908 -->
-<!-- savory, breaded eggplant --></notextile>
+---
+date: 1386213908
+desc: savory, breaded eggplant
+---
+
 h2. Baked Eggplant Parmesan
 
 * 3 eggplant, thinly sliced and optionally peeled

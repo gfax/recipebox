@@ -1,5 +1,8 @@
-<notextile><!-- 1386551476 -->
-<!-- hummus and vegetables in a spicy curry and sesame sauce --></notextile>
+---
+date: 1386551476
+desc: hummus and vegetables in a spicy curry and sesame sauce
+---
+
 h2. Sesame Hummus Wraps
 
 * 1 pack (six count) multi-grain-flax or whole-wheat bread wraps

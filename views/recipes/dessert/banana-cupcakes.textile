@@ -1,5 +1,8 @@
-<notextile><!-- 1386012854 -->
-<!-- flour cupcakes with a peanut-butter frosting --></notextile>
+---
+date: 1386012854
+desc: flour cupcakes with a peanut-butter frosting
+---
+
 h2. Banana Cupcakes
 
 * 1 cup granulated sugar

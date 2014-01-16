@@ -1,5 +1,7 @@
-<notextile><!-- 1385940807 -->
-<!-- with squash and peppers --></notextile>
+---
+date: 1385940807
+desc: with squash and peppers
+---
 
 h2. Three-bean Vegetarian Chili
 

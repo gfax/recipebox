@@ -1,5 +1,8 @@
-<notextile><!-- 1386217933 -->
-<!-- baked fish topped with fresh basil and veggies --></notextile>
+---
+date: 1386217933
+desc: baked fish topped with fresh basil and veggies
+---
+
 h2. Zucchini Feta Halibut
 
 * 1 tsp olive oil
