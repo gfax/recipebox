@@ -17,8 +17,12 @@ Modify `recipebox.rb` to set your app name and environment.
 
 See `views/recipes` for folder hierarchy and examples using textile. Since I personally don't use markdown, here is an example markdown page:
 
-    <!-- 1267666404 (This line is for adding a unix timestamp to use as a post date, but completely optional.) -->
-    <!-- This second line is for the page description, but assumes you put a timestamp first. -->
+    ---
+    title: Markdown Soup (If you don't specify a title, it will be extrapolated from the filename.)
+    date: 1267666404 (Date can be plaintext or in the form of a unix timestamp
+    desc: This is the best soup
+    ---
+
     ## Markdown Soup
 
     * 1 tsp salt
