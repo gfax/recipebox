@@ -49,7 +49,7 @@ class RecipeBox < Sinatra::Base
       t = Time.at(meta['date'].to_s.to_i)
       meta['date'] = t.strftime '%y-%m' unless t.year <= 1969
     else
-      meta['date'] = File.new(file).ctime.strftime '%m-%m'
+      meta['date'] = File.new(file).ctime.strftime '%y-%m'
     end
     unless meta['title']
       meta['title'] = File.basename(file, File.extname(file))
