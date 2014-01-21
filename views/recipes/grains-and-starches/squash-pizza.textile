@@ -1,21 +1,44 @@
 ---
 date: 1385949411
-desc: ...still a work in progress
+desc: gluten free vegetable pie
 ---
 
 h2. Squash Pizza
 
-* 1 cup thinly sliced onion
-* 1/2 butternut squash - peeled, seeded, and thinly sliced
-* 1 tsp chopped fresh rosemary
-* salt and black pepper to taste
-* 3 tablespoons olive oil, divided
+*Crust:*
+* 1 cup tapioca starch
+* 1 cup sorghum flour
+* 1 cup potato starch
+* 1/2 cup brown rice flour
+* 1/2 cup millet flour
+* 3 tsp baking powder
+* 2 tsp xanthan gum
+* 1 tsp salt
+* 3 Tbsp light brown sugar
+* 1 tsp light brown sugar (for proofing yeast)
+* 1 and 1/4 cups warm water (between 110F-115F/43C-46C, for proofing yeast)
+* 1/2 oz active dry yeast
+* 1/4 cup virgin olive oil
+* 1/4 cup egg white, lightly beaten
+* 1/4 teaspoon rice vinegar
 * 1 Tbsp cornmeal
-* 2 Tbsp grated Asiago or Parmesan cheese
+*Toppings:*
+* 1 cup onion, thinly sliced
+* 1/2 butternut squash, peeled, seeded, and shredded
+* 1 tsp fresh rosemary, chopped
+* salt and black pepper to taste
+* 3 Tbsp virgin olive oil, divided
+* 1/2 cup fresh Parmesan or Asiago cheese, grated
 
-# Preheat oven to 400F/205C.
-# Place sliced onion and squash in a roasting pan. Sprinkle with rosemary, salt, pepper, and 2 tablespoons of the olive oil; toss to coat.
-# Bake in the preheated oven for 20 minutes, or until onions are lightly browned and squash is tender; set aside.
-# Increase oven temperature to 450F/230C. On a floured surface, roll each ball of dough into an 8 inch round. Place the rounds on a baking sheet sprinkled with cornmeal (you may need 2 baking sheets depending on their size). Distribute squash mixture over the two rounds and continue baking for 10 minutes, checking occasionally, or until the crust is firm. Sprinkle with cheese and remaining tablespoon olive oil. Cut into quarters, and serve.
+# In a large mixing bowl, whisk together flours, baking powder, gum, salt, and 3 Tbsp of sugar.
+# Add 1 tsp brown sugar to 1 cup warm water and dissolve. Add yeast to sugar water and proof for 5 minutes. Air bubbles will begin to form underneath yeast if it is alive.
+# Add the proofed yeast mixture to the dry ingredients. Add the oil, egg and vinegar.
+# Beat the dough until smooth and sticky. Add the remaining 1/4 cup water as needed. The pizza dough should be creamy-smooth and not too thick: almost batter-like.
+# Dust two pizza pans with the cornmeal. Divide the dough in half. Scoop each half onto the center of pans. Using wet hands, press down lightly and flatten the dough to create a thin, even pizza shell, with slightly raised edges.
+# Set the crusts in a warm spot to rest and rise for 15 minutes. Preheat oven to 400F/205C.
+# Meanwhile, place sliced onion and squash in a roasting pan. Sprinkle with rosemary, salt, pepper, and 2 Tbsp of olive oil. Toss to coat.
+# Bake in oven for 22 minutes, or until onions are lightly browned and squash is tender. Set aside.
+# Move pizza crusts to oven and bake for 10 minutes. Remove crusts from oven and ready for toppings.
+# Brush crusts with remaining olive oil and distribute squash mixture on evenly. Sprinkle with cheese and bake 6-8 minutes, checking occasionally. Allow to cool a few minutes before cutting and serving.
 
-Adapted from "All Recipes":http://allrecipes.com/recipe/butternut-squash-pizzas-with-rosemary/.
+Crust adapted from "GlutenFreeGoddess":http://glutenfreegoddess.blogspot.com/2011/02/gluten-free-pizza-crust-my-new-recipe.html.
