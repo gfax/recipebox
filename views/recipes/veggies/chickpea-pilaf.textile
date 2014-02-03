@@ -1,0 +1,22 @@
+---
+date: 1391399433
+desc: chickpeas, tomato, and spinach seasoned on a bed of rice
+---
+
+h2. Chickpea Pilaf
+
+* 4 cups jasmine or basmati rice, cooked
+* 1 Tbsp olive oil
+* 2 onions, chopped
+* 3 cloves garlic, minced
+* 2 (15 oz) cans of chickpeas, drained and rinsed
+* 15 oz diced tomato, drained
+* 1/8 tsp chipotle chile powder (optional)
+* 1 tsp paprika
+* 1 tsp oregano
+* 12 oz spinach, chopped
+* 1 lemon, juiced
+
+# In a large pan, add oil, onions, and garlic. Cook until tender.
+# Add chickpeas, tomato, and spices. Cook over low heat until chickpeas are tender.
+# Add spinach and cook until wilted. Remove from heat and add lemon juice. Serve atop rice.

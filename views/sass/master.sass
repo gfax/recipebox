@@ -54,8 +54,8 @@ ol, pre, ul
 blockquote
   margin: $base-vertical-margin 0
   padding: 0 $base-vertical-margin
-  font-style: italic
   color: $base-text-color + #555
+  background: $background-color + #555
   
 pre
   padding: ($vertical-rhythm / 2) 1em
@@ -63,6 +63,11 @@ pre
 
 img
   border: none
+
+q
+  margin: $base-vertical-margin 0
+  padding: 0 $base-vertical-margin
+  font-style: italic
 
 // The visuals
 
@@ -142,10 +147,26 @@ a
         padding: 0
     table, td, th
       border: 1px solid $border-color
+      margin: 0 0 1em 0
       padding: 0
       text-align: center
       img
         border: none
+  #prefooter
+    background: $topbar-background-color
+    max-width: 80%
+    text-align: center
+    a
+      color: $topbar-text-color
+      &:hover
+        color: $topbar-hover-color
+        border-bottom-color: $topbar-hover-color  
+    li
+      display: inline-block
+      padding-right: 1em
+    ul
+      margin: 0
+
 
 footer
   clear: both
