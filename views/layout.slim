@@ -36,4 +36,7 @@ html
       - if @meta
         - if @meta['date']
           | Posted #{@meta['date']}. 
-      p Copyright © #{Time.now.year} #{SiteName}
+      p 
+        | Copyright © #{Time.now.year} #{SiteName}. 
+        a href="/atom.xml" Atom feed
+        | .

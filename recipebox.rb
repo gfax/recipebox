@@ -2,10 +2,10 @@
 class RecipeBox < Sinatra::Base
 
   ### Configuration ###
-  SiteName = '#gfax'
+  SiteName = '#gfax - Recipebox'
   SiteTitle = 'gfax - Recipebox'
   PagesFolder = File.dirname(__FILE__) + '/views/recipes/'
- 
+
   #set :environment, :production # enables caching
 
   set :markdown,
@@ -19,7 +19,7 @@ class RecipeBox < Sinatra::Base
     # Cache rendered pages in a production environment.
     # Requests to / should be cached as index.html.
     uri = request.path_info == "/" ? 'index' : request.path_info
-    # Don't cache pages with query strings. 
+    # Don't cache pages with query strings.
     unless uri =~ /\?/
       uri << '.html'
       # Put all cached files in a subdirectory called '.cache'.
@@ -36,7 +36,7 @@ class RecipeBox < Sinatra::Base
     return {} unless file
     n = PagesFolder.length
     meta = {}
-    begin 
+    begin
       page = Preamble.load(file)
       meta = page.first
       meta['body'] = page[1]
@@ -58,7 +58,8 @@ class RecipeBox < Sinatra::Base
     return meta
   end
 
-  def hash_pages(folder=PagesFolder)
+  def hash_pages(folder=PagesFolder, opts={})
+    sort = opts[:sort_by] || 'title'
     # Array of category folders.
     a = Dir.glob(folder + '**/').map { |f| f.sub(folder, '').chop }
     # Remove root directory. We'll manually add this on at the end.
@@ -66,15 +67,25 @@ class RecipeBox < Sinatra::Base
     # Create a hash to sort pages in.
     h = {}
     # Start with pages in each sub-directories.
-    a.each do |e| 
+    a.each do |e|
       h[e] = Dir[folder + e + '/*'].select { |f| not File.directory? f }
       # Collect page data into sub-hashes.
-      h[e].map! { |filepath| readmeta(filepath) }.sort_by!{ |h| h['title'] }
+      h[e].map! { |filepath| readmeta(filepath) }
+      h[e].sort_by! { |h| h[sort] }
     end
     # Category for pages in the root directory:
     h['root'] = Dir[folder + '*'].select { |f| not File.directory? f }.sort
-    h['root'].map! { |filepath| readmeta(filepath) }.sort_by!{ |h| h['title'] }
+    h['root'].map! { |filepath| readmeta(filepath) }
+    h['root'].sort_by! { |h| h[sort] }
     return h
+  end
+
+  def uri
+    case request.port
+      when 80 then 'http://' + request.host
+      when 443 then 'https://' + request.host
+      else 'http://' + request.host_with_port
+    end
   end
 
   class CoffeeHandler < Sinatra::Base
@@ -109,19 +120,33 @@ class RecipeBox < Sinatra::Base
 
   # Generate robots.txt:
   get '/robots.txt' do
-    hostname = case request.port
-               when 80 then 'http://' + request.host
-               when 443 then 'https://' + request.host
-               else 'http://' + request.host_with_port
-               end
-    "Sitemap: #{hostname}/sitemap.xml"
+    "Sitemap: #{uri}/sitemap.xml"
+  end
+
+  # Generate atom feed:
+  get '/atom.xml' do
+    feed = TinyAtom::Feed.new(uri, SiteName, uri + '/atom.xml')
+    n = 0
+    a = hash_pages.flatten(2).select { |e| e.is_a? Hash }
+    a = a.sort_by { |e| e['date'] }.reverse[0..15]
+    a.each do |e|
+      feed.add_entry(
+        n += 1,
+        e['title'],
+        Time.now,
+        uri + '/' + e['filepath'],
+        :summary => e['desc'],
+        #:content => e['body']
+      )
+    end
+    return feed.make :indent => 2
   end
 
   # Generate sitemap:
   get '/sitemap.xml' do
     hostname = if request.port == 80 or request.port == 443
                  request.host
-               else 
+               else
                  request.host_with_port
                end
     map = XmlSitemap::Map.new(hostname, :root => false) do |m|
@@ -130,9 +155,9 @@ class RecipeBox < Sinatra::Base
       hash_pages.each_pair do |k, v|
         if k == 'root'
           # Top-level pages; just need the files' basenames.
-          v.each { |e| m.add e }
+          v.each { |e| m.add e['title'] }
         else
-          v.each { |e| m.add k + '/' + e }
+          v.each { |e| m.add k + '/' + e['title'] }
         end
       end
     end
