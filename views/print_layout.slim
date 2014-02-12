@@ -1,4 +1,4 @@
-/ This is the main template file.
+/ This is the print template file.
 html
   head
     - if @meta
@@ -19,3 +19,5 @@ html
             - for page in @subpages
               li
                 a href="/#{page['filepath']}" #{page['title']}
+
+  script window.print();
