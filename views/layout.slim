@@ -12,7 +12,7 @@ html
       ul
         li: a href="//gfax.ch"  Home
         li: a href="//github.com/gfax" title=("All the sauces")  Github
-        li: a href="//lit.gfax.ch"  Music Library
+        li: a href="//lit.gfax.ch"  Library
         li: a href="//p.gfax.ch"  Pastebox
         li: a href="//wiki.gfax.ch"  Wiki
         li.first: a href="//r.gfax.ch"  Recipebox
@@ -20,13 +20,6 @@ html
     #container
       #content
         == yield
-        - if @subpages
-          - if not @subpages.empty?
-            h3 Subpages:
-            ul
-            - for page in @subpages
-              li
-                a href="/#{page['filepath']}" #{page['title']}
         - if @print_url
           | (
           b
@@ -35,8 +28,8 @@ html
     footer
       - if @meta
         - if @meta['date']
-          | Posted #{@meta['date']}. 
-      p 
+          | Posted #{@meta['date'].strftime '%y-%m'}.
+      p
         | Copyright © #{Time.now.year} #{SiteName}. 
         a href="/atom.xml" Atom feed
         | .

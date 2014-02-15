@@ -18,12 +18,12 @@ class RecipeBox < Sinatra::Base
   def cache(text)
     # Cache rendered pages in a production environment.
     # Requests to / should be cached as index.html.
-    uri = request.path_info == "/" ? 'index' : request.path_info
+    urn = request.path_info == "/" ? 'index' : request.path_info
     # Don't cache pages with query strings.
-    unless uri =~ /\?/
-      uri << '.html'
+    unless urn =~ /\?/
+      urn << '.html' unless urn == '/atom.xml'
       # Put all cached files in a subdirectory called '.cache'.
-      path = File.join(File.dirname(__FILE__), '.cache', uri)
+      path = File.join(File.dirname(__FILE__), '.cache', urn)
       # Create the directory if it doesn't exist.
       FileUtils.mkdir_p(File.dirname(path))
       # Write the text passed to the path.
@@ -46,10 +46,9 @@ class RecipeBox < Sinatra::Base
     meta['filepath'] = file[n..-1].chomp File.extname(file)
     if meta['date']
       # Extract date from file timestamp and convert unix timestamps.
-      t = Time.at(meta['date'].to_s.to_i)
-      meta['date'] = t.strftime '%y-%m' unless t.year <= 1969
+      meta['date'] = Time.at(meta['date'].to_s.to_i)
     else
-      meta['date'] = File.new(file).ctime.strftime '%y-%m'
+      meta['date'] = File.new(file).ctime
     end
     unless meta['title']
       meta['title'] = File.basename(file, File.extname(file))
@@ -67,7 +66,7 @@ class RecipeBox < Sinatra::Base
     # Create a hash to sort pages in.
     h = {}
     # Start with pages in each sub-directories.
-    a.each do |e|
+    a.sort.each do |e|
       h[e] = Dir[folder + e + '/*'].select { |f| not File.directory? f }
       # Collect page data into sub-hashes.
       h[e].map! { |filepath| readmeta(filepath) }
@@ -133,13 +132,15 @@ class RecipeBox < Sinatra::Base
       feed.add_entry(
         n += 1,
         e['title'],
-        Time.now,
+        e['date'],
         uri + '/' + e['filepath'],
         :summary => e['desc'],
         #:content => e['body']
       )
     end
-    return feed.make :indent => 2
+    feed = feed.make(:indent => 2)
+    cache feed if settings.production?
+    feed
   end
 
   # Generate sitemap:
