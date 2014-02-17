@@ -4,23 +4,24 @@ desc: family favorite
 ---
 
 h2. Pumpkin Bean Burrito Mix
+
 * 1/4 cup vegetable oil
 * 2 small onions, chopped
 * 2 tsp minced garlic
 * 1 red bell pepper, chopped
 * 1 jalapeño pepper, seeded, minced
-* 1 small chipotle pepper, chopped, or 1 tsp chipotle chile powder
+* 1 small chipotle pepper, minced, or 1 tsp chipotle chile powder
 * 2 tsp cumin
-* 2 (15 oz) cans of black beans, rinsed, drained, partially mashed
-* 1/2 of a (15 oz) can of red kidney or pinto beans, rinsed, drained, partially mashed
+* 30 oz black beans, rinsed, drained, partially mashed
+* 7 oz pink beans or pinto beans, rinsed, drained, partially mashed
 * 1 tsp oregano
-* 1 (15 oz) can (or 1 & 1/2 cup) pumpkin pureé
+* 15 oz (about 1 & 1/2 cup) pumpkin pureé
 * 1/2 tsp (smoked) salt
-* 1 handful freshly chopped cilantro
+* 1 handful fresh cilantro, chopped
 
 # Heat oil in a large skillet over medium heat. Add onions and garlic. Sauté until tender.
 # Add bell pepper, jalapeño pepper, chipotle chile and cumin. Cook until bell pepper is tender.
-# Pour beans into skillet and stir in oregano.
+# Add beans to skillet and stir in oregano.
 # Mix pumpkin pureé and salt together in a bowl. Add to skillet and mix.
 # Reduce heat and mix in cilantro.
 
