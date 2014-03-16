@@ -6,9 +6,9 @@ desc: butter-pecan fried brussel sprouts in garlic
 h2. Cranberry Brussel Sprouts
 
 * 1/2 cup pecans, halved
-* 3 Tbsp butter
-* 1 lb brussel sprouts, halved (quartered for larger sprouts)
-* 1/2 tsp garlic salt
+* 1/4 cup butter
+* 1 lb brussel sprouts, quartered
+* 1 tsp garlic salt
 * 1 cup dried cranberries
 * 1/8 tsp black peppercorn, freshly grounded
 

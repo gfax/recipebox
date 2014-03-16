@@ -5,22 +5,21 @@ desc: sweet and salty
 
 h2. Sweet Potato Burrito Mix
 
-* 1 tablespoon vegetable oil
+* 1 Tbsp vegetable oil
 * 1 onion, chopped
 * 4 cloves garlic, minced
-* 6 cups kidney beans, rinsed and drained
+* 45 oz kidney beans, rinsed, drained, partially mashed
+* 4 cups sweet potato, cooked and mashed
 * 2 cups water
 * 3 Tbsp chili powder
-* 2 tsp ground cumin
-* 4 tsp prepared mustard
+* 2 tsp cumin
+* 4 tsp mustard
 * 1/4 tsp chipotle chile powder, or to taste
 * 3 Tbsp soy sauce
-* 4 cups cooked and mashed sweet potatoes
 
 # Preheat oven to 350F/175C.
 # Heat oil in a medium skillet. Sauté onion and garlic until tender.
-# Stir in beans, and mash. Add sweet potato and mix.
-# Gradually stir in water, until mixture reaches desired consistency.
-# Stir in the chili powder, cumin, mustard, cayenne pepper and soy sauce. Remove from heat.
+# Stir in beans and sweet potato. Gradually stir in water, until mixture reaches desired consistency.
+# Stir in the chili powder, cumin, mustard, chipotle pepper and soy sauce. Cook until fragrant. Remove from heat.
 
 Adapted from "AllRecipes":http://allrecipes.com/recipe/addictive-sweet-potato-burritos/.
