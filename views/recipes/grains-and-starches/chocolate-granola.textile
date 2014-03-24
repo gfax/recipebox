@@ -24,7 +24,7 @@ h2. Chocolate Granola
 
 # Pre-heat oven to 350F/175C.
 # In a large mixing bowl, combine oats, almonds, pepitas, and flax seeds.
-# Mix oil, honey, cinnamon, cardamom, vanilla extract, and salt in a small bowl, then drizzle over oat mix.
+# Mix oil and spices in a small bowl. Drizzle and stir into oat mix.
 # Bake in a large pan for 10 minutes. Add cranberries and stir mixture. Bake an additional 5 minutes.
 # If using coconut, add just a few minutes before removal.
 # Return granola to mixing bowl and slowly add chocolate while stirring to avoid the chocolate melting into clumps.
