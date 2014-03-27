@@ -68,7 +68,7 @@ Here's a basic config pointing to the cache folder in Nginx:
 
 ###Example Systemd Service File
 
-If you use a systemd-based system (like Arch Linux), you can copy this config to a .service file and edit the file paths to match your unicorn executable and site path.
+If you use a systemd-based system (like Arch Linux), you can copy this config to a .service file and edit the file paths to match your site root and unicorn path.
 
     [Unit]
     Description=Unicorn application server (recipebox)
@@ -77,7 +77,8 @@ If you use a systemd-based system (like Arch Linux), you can copy this config to
     [Service]
     Type=forking
     User=root
-    ExecStart=/usr/bin/unicorn -D -c /srv/recipebox/unicorn.rb
+    WorkingDirectory=/srv/recipebox
+    ExecStart=/usr/bin/bundle exec "/usr/bin/unicorn -D -c unicorn.rb"
 
     [Install]
     WantedBy=multi-user.target
