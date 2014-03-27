@@ -6,17 +6,17 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.3)
+    coffee-script-source (1.7.0)
     execjs (2.0.2)
-    kgio (2.8.1)
+    kgio (2.9.2)
     preamble (0.0.2)
-    public_suffix (1.4.0)
+    public_suffix (1.4.2)
     rack (1.5.2)
     rack-protection (1.5.2)
       rack
-    raindrops (0.12.0)
-    redcarpet (3.0.0)
-    sass (3.2.14)
+    raindrops (0.13.0)
+    redcarpet (3.1.1)
+    sass (3.3.4)
     sinatra (1.4.4)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -29,7 +29,7 @@ GEM
     tinyatom (0.3.6)
       builder (> 0)
       public_suffix (> 0)
-    unicorn (4.8.0)
+    unicorn (4.8.2)
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
