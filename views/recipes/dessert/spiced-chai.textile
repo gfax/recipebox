@@ -1,0 +1,23 @@
+---
+date: 1405817335
+desc: Indian inspired tea that goes well with dessert
+---
+
+h2. Spiced Chai
+
+* 3 cups water
+* 3-4 inch cinnamon stick
+* 1 tsp whole black peppercorn
+* 1 tsp fresh ginger, grated
+* 1/2 tsp cardamom seed, removed from pods
+* 1/4 tsp nutmeg
+* 1/4 tsp vanilla extract
+* 1/8 tsp cloves
+* 1/2 oz loose leaf black tea
+* 1/4 cup brown sugar
+* 1 cup whole milk
+
+# Bring water to a simmer and add all the spices. Brew for 10 minutes.
+# Add tea and continue brewing for another 3-5 minutes, making sure to not allow tea to over-brew and turn bitter.
+# Add brown sugar and stir until dissolved. Remove from heat.
+# Stir in milk then pour the liquid through a mesh strainer into a serving vessel.

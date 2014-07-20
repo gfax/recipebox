@@ -3,11 +3,11 @@ date: 1385915286
 desc: the gfax guide to salsa
 ---
 
-h2. Salsa
+h2. Salsa Roja
 
 * 1 (28 oz) can diced tomatoes (drained)
 * 2 (10 oz) cans diced tomatoes and green chiles (Rotel cans these)
-* 1 garlic glove
+* 1 clove garlic, minced
 * 1/2 cup of fresh cilantro
 * 1/2 lime
 * 1/4 cup of chopped onions
