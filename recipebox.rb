@@ -46,7 +46,12 @@ class RecipeBox < Sinatra::Base
     meta['filepath'] = file[n..-1].chomp File.extname(file)
     if meta['date']
       # Extract date from file timestamp and convert unix timestamps.
-      meta['date'] = Time.at(meta['date'].to_s.to_i)
+      t = Time.at(meta['date'].to_s.to_i)
+      meta['date'] = t unless t.year <= 1969
+      # Check if file timestamp is at least 24 hours newer than date meta.
+      if t.to_i < File.new(file).ctime.to_i - 88000
+        meta['updated'] = File.new(file).ctime
+      end
     else
       meta['date'] = File.new(file).ctime
     end

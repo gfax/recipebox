@@ -14,7 +14,7 @@ html
         li: a href="//github.com/gfax" title=("All the sauces")  Github
         li: a href="//lit.gfax.ch"  Library
         li: a href="//p.gfax.ch"  Pastebox
-        li: a href="//wiki.gfax.ch"  Wiki
+        /li: a href="//wiki.gfax.ch"  WikiFax
         li.first: a href="//r.gfax.ch"  Recipebox
         li: a href="//z.gfax.ch"  Zipper
     #container
@@ -27,7 +27,9 @@ html
           | )
     footer
       - if @meta
-        - if @meta['date']
+        - if @meta['date'] and @meta['updated']
+          | Posted #{@meta['date'].strftime '%y-%m'}. Updated #{@meta['updated'].strftime '%y-%m'}.
+        - elsif @meta['date']
           | Posted #{@meta['date'].strftime '%y-%m'}.
       p
         | Copyright © #{Time.now.year} #{SiteName}. 
