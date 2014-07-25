@@ -38,8 +38,8 @@ class RecipeBox < Sinatra::Base
     meta = {}
     begin
       page = Preamble.load(file)
-      meta = page.first
-      meta['body'] = page[1]
+      meta = page.metadata
+      meta['body'] = page.content
       meta['tags'] = [*meta['tags']] if meta['tags']
     rescue RuntimeError
     end
