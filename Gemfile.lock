@@ -56,7 +56,7 @@ PLATFORMS
 DEPENDENCIES
   RedCloth
   coffee-script
-  preamble
+  preamble (>= 0.0.3)
   redcarpet
   sass
   sinatra (~> 1.4.4)
