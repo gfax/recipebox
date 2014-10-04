@@ -10,17 +10,17 @@ h2. Pumpkin Turkey Chili
 * 1 bell pepper, diced
 * 3 cloves garlic, chopped
 * 1 tsp cumin
-* ~1 lbs ground turkey
+* 1 lb ground turkey
 * 1 (15 oz) can white beans, rinsed and drained
 * 1 (15 oz) can diced tomatoes
 * 1 (15 oz) can pumpkin pureé
-* 2 cups vegetable stock or pumpkin ale
+* 2 cups vegetable stock
 * 1 tsp oregano
 * 1/4 tsp chipotle chile powder (optional)
-* 1/2 tsp ground cinnamon
-* 1/4 tsp ground ginger
-* 1/4 tsp ground nutmeg
-* 1/8 tsp ground cloves
+* 1/2 tsp cinnamon
+* 1/4 tsp ginger
+* 1/4 tsp nutmeg
+* 1/8 tsp cloves
 * salt and pepper to taste
 
 # Heat the oil in a pan over medium heat, add the onion, cook until tender. Add the bell pepper, garlic and cumin. Cook until tender.

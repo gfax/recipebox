@@ -78,7 +78,7 @@ If you use a systemd-based system (like Arch Linux), you can copy this config to
     Type=forking
     User=root
     WorkingDirectory=/srv/recipebox
-    ExecStart=/usr/bin/bundle exec "/usr/bin/unicorn -D -c unicorn.rb"
+    ExecStart=/usr/bin/unicorn -D -c unicorn.rb
 
     [Install]
     WantedBy=multi-user.target
