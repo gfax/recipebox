@@ -20,10 +20,9 @@ See `views/recipes` for folder hierarchy and examples using textile. Since I per
     ---
     title: Markdown Soup (If you don't specify a title, it will be extrapolated from the filename.)
     date: 1267666404 (Date can be plaintext or in the form of a unix timestamp. If no date is specified, a date is extrapolated from the file's creation timestamp.)
-    desc: This is the best soup
+    desc: This is the best soup (Description to display on the home page.)
+    noheader: true (Prevents header from displaying on the page. Defaults to false if you don't specify.)
     ---
-
-    ## Markdown Soup
 
     * 1 tsp salt
     * 1 Tbsp ruby
@@ -63,8 +62,8 @@ Here's a basic config pointing to the cache folder in Nginx:
       }
       location / {
         try_files /.cache/$uri /.cache/$uri.html /public/$uri /public/$uri.html @app;
-      } 
-    } 
+      }
+    }
 
 ###Example Systemd Service File
 
