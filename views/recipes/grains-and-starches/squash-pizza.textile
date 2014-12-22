@@ -3,8 +3,6 @@ date: 1385949411
 desc: gluten free vegetable pie
 ---
 
-h2. Squash Pizza
-
 *Crust:*
 * 1 cup brown rice flour
 * 1 cup sorghum flour

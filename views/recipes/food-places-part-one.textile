@@ -3,8 +3,6 @@ date: 1405800757
 title: "Food Places: Middle Eastern / Indian Edition"
 ---
 
-h2. Food Places: Middle Eastern / Indian Edition
-
 Food places around the Richmond area where I live.
 
 h3. Markets

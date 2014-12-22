@@ -3,8 +3,6 @@ date: 1386023126
 desc: fluffy 4-ingredient biscuits
 ---
 
-h2. 7-Up Biscuits
-
 * 2 cups all-purpose biscuit baking mix
 * 1 cup lemon-lime soda
 * 1/2 cup sour cream

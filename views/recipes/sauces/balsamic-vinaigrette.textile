@@ -3,12 +3,10 @@ date: 1393187704
 desc: Italian dressing
 ---
 
-h2. Balsamic Vinaigrette
-
 * 2/3 cup extra-virgin olive oil
 * 1/4 cup balsamic vinegar
 * 1 Tbsp red wine vinegar
-* 3 cloves garlic, minced
+* 2 cloves garlic, minced
 * 2 Tbsp fresh oregano, chopped, or 2 tsp dried oregano.
 * 1 tsp Dijon mustard
 * salt and black peppercorn to taste

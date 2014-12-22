@@ -3,8 +3,6 @@ date: 1386045872
 desc: gluten free, low-carb muffins with a sweet, salty taste
 ---
 
-h2. Coconut Curry Muffins
-
 *Topping:*
 * 1 Tbsp coconut flour, sifted
 * 1 Tbsp evaporated cane juice

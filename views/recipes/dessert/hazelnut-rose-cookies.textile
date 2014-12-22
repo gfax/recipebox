@@ -3,8 +3,6 @@ date: 1391277638
 desc: gluten-free, rose water cookies
 ---
 
-h2. Hazelnut Rose Cookies
-
 * 1 cup + 2 Tbsp butter, softened
 * 2 Tbsp rose water
 * 1 cup brown sugar

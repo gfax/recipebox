@@ -3,8 +3,6 @@ date: 1390584683
 desc: dairy-free, gluten-free corn bread
 ---
 
-h2. Orange Corn Cake
-
 * 1/2 cup olive oil
 * 2 large eggs
 * 1 cup sugar

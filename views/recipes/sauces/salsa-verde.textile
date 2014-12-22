@@ -3,8 +3,6 @@ date: 1404268326
 desc: mild, sweet, roasted tomatillo salsa
 ---
 
-h2. Salsa Verde
-
 * 1 lb tomatillos, husks removed and rinsed
 * 1 onion, quartered
 * 2 jalapeños, halved and seeded

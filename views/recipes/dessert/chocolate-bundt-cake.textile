@@ -3,12 +3,10 @@ date: 1411697373
 desc: rich, gluten-free, dark chocolate cake
 ---
 
-h2. Chocolate Bundt Cake
-
 *Mix:*
 * 1 & 3/4 cup sugar
 * 1 & 1/2 cup rice flour
-* 3/4 cup dark coacoa powder
+* 3/4 cup dark cocoa powder
 * 1/4 cup tapioca flour/starch
 * 2 tsp baking powder
 * 1 tsp baking soda

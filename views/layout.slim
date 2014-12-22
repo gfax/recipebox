@@ -19,6 +19,9 @@ html
         li: a href="//z.gfax.ch"  Zipper
     #container
       #content
+        - if @meta
+          - if @meta['title'] and not @meta['noheader']
+            h2. #{@meta['title']}
         == yield
         - if @print_url
           | (

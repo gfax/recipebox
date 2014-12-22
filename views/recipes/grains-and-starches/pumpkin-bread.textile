@@ -3,8 +3,6 @@ date: 1393042565
 desc: simple, crispy loaf of wheat bread
 ---
 
-h2. Pumpkin Bread
-
 * 1 tsp brown sugar (for proofing yeast)
 * 1/2 cup warm water (between 110F-115F/43C-46C, for proofing yeast)
 * 1/4 oz active dry yeast

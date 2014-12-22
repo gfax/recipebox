@@ -1,4 +1,7 @@
-h2. About Recipebox
+---
+date: 1419224363
+title: About the Recipebox
+---
 
 This site is an online recipe book for me and my mom to stay organized and to share recipes with others. Unlike recipe blog sites or recipe databases, this is strictly recipes to keep things minimal and make navigating or reading off recipes during preparation simpler. Recipes that are taken from other sources are credited when possible. All original recipes fall under the "free license":https://www.gnu.org/licenses/lgpl.html of this "site's software":https://github.com/gfax/recipebox.
 

@@ -3,8 +3,6 @@ date: 1386023126
 desc: fried chicken and vegetables
 ---
 
-h2. Chicken Cacciatore
-
 * 1/4 cup all-purpose flour
 * 1 1/4 tsp salt
 * 3/4 tsp black pepper

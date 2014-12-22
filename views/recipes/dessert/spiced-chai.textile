@@ -3,8 +3,6 @@ date: 1405817335
 desc: Indian inspired tea that goes well with dessert
 ---
 
-h2. Spiced Chai
-
 * 3 cups water
 * 3-4 inch cinnamon stick
 * 1 tsp whole black peppercorn

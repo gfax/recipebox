@@ -3,8 +3,6 @@ date: 1409417506
 desc: rich, slow-cooked
 ---
 
-h2. New World Marinara
-
 * 1 Tbsp virgin olive oil
 * 3 cups onion, chopped
 * 3/4 cup carrot, diced

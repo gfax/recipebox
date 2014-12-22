@@ -3,8 +3,6 @@ date: 1392864647
 desc: sweet bean cake made with green tea and no flour
 ---
 
-h2. Chickpea Matcha Cake
-
 * 15 oz chickpeas, rinsed and drained
 * 3 eggs
 * 1 Tbsp fresh matcha

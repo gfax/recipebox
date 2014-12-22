@@ -3,8 +3,6 @@ date: 1386213908
 desc: sweet and salty
 ---
 
-h2. Sweet Potato Burrito Mix
-
 * 1 Tbsp vegetable oil
 * 1 onion, chopped
 * 4 cloves garlic, minced

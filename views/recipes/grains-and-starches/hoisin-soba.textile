@@ -3,8 +3,6 @@ date: 1392344382
 desc: noodles and vegetables in a ginger-garlic hoisin sauce
 ---
 
-h2. Hoisin Soba
-
 *Sauce:*
 * 3/4 cup vegetable broth
 * 3 cloves garlic, minced

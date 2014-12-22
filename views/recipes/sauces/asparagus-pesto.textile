@@ -3,8 +3,6 @@ date: 1385940807
 desc: spread for your favorite deli or grilled sandwich
 ---
 
-h2. Asparagus Pesto
-
 * 1 cup asparagus, blanched
 * 1/2 cup baby spinach
 * 1 clove garlic

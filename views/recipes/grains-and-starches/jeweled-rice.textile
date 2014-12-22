@@ -3,7 +3,6 @@ date: 1387686566
 desc: sweet Persian rice
 ---
 
-h2. Jeweled Rice
 * 2 cups basmati rice, cooked and rinsed cold
 * 2 oranges, juiced and zested
 * 2 Tbsp sugar

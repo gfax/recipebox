@@ -3,8 +3,6 @@ date: 1386045872
 desc: serve with almond milk for breakfast or as an afternoon snack
 ---
 
-h2. Chocolate Granola
-
 * 18 oz rolled oats
 * 3 oz almonds, toasted and chopped
 * 2 oz pepitas, toasted and chopped

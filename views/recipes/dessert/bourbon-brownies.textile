@@ -3,8 +3,6 @@ date: 1398909258
 desc: gluten-free dark chocolate brownies
 ---
 
-h2. Bourbon Brownies
-
 * 1 cup brown sugar
 * 1/2 cup almond flour
 * 1/4 cup sorghum flour
