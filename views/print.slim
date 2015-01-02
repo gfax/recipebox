@@ -11,6 +11,9 @@ html
   body
     #container
       #content
+        - if @meta
+          - if @meta['title'] and not @meta['noheader']
+            h2. #{@meta['title']}
         == yield
         - if @subpages
           - if not @subpages.empty?

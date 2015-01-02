@@ -3,8 +3,6 @@ date: 1388599956
 desc: curried vegetables in a tomato soup
 ---
 
-h2. Quinoa Lentil Soup
-
 * 3 cups vegetable stock
 * 1 cup dry (uncooked) quinoa
 * 1-2 Tbsp olive oil

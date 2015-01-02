@@ -3,8 +3,6 @@ date: 1386213908
 desc: savory, breaded eggplant
 ---
 
-h2. Baked Eggplant Parmesan
-
 * 1 large eggplant, thinly sliced and optionally peeled
 * 2 eggs, beaten
 * 4 cups Italian-seasoned bread crumbs

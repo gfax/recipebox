@@ -3,8 +3,6 @@ date: 1385940807
 desc: with squash and peppers
 ---
 
-h2. Three-bean Vegetarian Chili
-
 * 2 red bell peppers
 * 3 Tbsp extra-virgin olive oil
 * 1 cup chopped onion

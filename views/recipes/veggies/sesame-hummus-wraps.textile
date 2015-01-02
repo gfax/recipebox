@@ -3,8 +3,6 @@ date: 1386551476
 desc: hummus and vegetables in a spicy curry and sesame sauce
 ---
 
-h2. Sesame Hummus Wraps
-
 * 1 pack (six count) multi-grain-flax or whole-wheat bread wraps
 *Sauce:*
 * 1 half of a (14 oz) can of coconut milk

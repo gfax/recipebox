@@ -3,8 +3,6 @@ date: 1395621691
 desc: Spanish-style soup with a New World touch
 ---
 
-h2. Tomato Pumpkin Soup
-
 * 1 & 1/2 tsp olive oil
 * 1 large onion, chopped
 * 1 celery stalk, thinly sliced

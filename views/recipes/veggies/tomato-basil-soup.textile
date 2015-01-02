@@ -3,8 +3,6 @@ date: 1392500304
 desc: creamy, American-style tomato soup
 ---
 
-h2. Tomato Basil Soup
-
 * 1 tbsp olive oil
 * 1 cup celery, diced
 * 1 cup carrots, diced

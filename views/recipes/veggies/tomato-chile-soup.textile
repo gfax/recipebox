@@ -3,8 +3,6 @@ date: 1392499413
 desc: hearty, Southwestern tomato soup
 ---
 
-h2. Tomato Chile Soup
-
 * 4 cups vegetable broth
 * 14 oz diced tomato
 * 14 oz pink beans or red kidney beans

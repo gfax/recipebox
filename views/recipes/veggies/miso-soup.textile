@@ -3,8 +3,6 @@ date: 1389304228
 desc: Japanese vegetable soup
 ---
 
-h2. Miso Soup
-
 * 15 oz soy bean sprouts, rinsed and drained
 * 1 clove garlic
 * 2 tsp ginger, minced

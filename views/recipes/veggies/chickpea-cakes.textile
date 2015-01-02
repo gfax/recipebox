@@ -3,8 +3,6 @@ date: 1387068910
 desc: savory, moist, and golden-fried
 ---
 
-h2. Chickpea Cakes
-
 *Cake mix:*
 * 2 (15 oz) cans of chickpeas, drained and rinsed
 * 1/2 cup green onions, chopped
@@ -14,7 +12,7 @@ h2. Chickpea Cakes
 * 1/2 lemon, juice and zest
 * 1 egg, lightly beaten
 * 1/2 cup all-purpose flour
-* 1/4 cup breadcrumbs 
+* 1/4 cup breadcrumbs
 * 1/4 cup sesame seeds, toasted
 *For frying:*
 * ~5 Tbsp olive or canola oil

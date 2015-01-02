@@ -3,8 +3,6 @@ date: 1403579480
 desc: spicy annatto bean dish
 ---
 
-h2. Bean Recado
-
 * 1/2 Tbsp olive oil
 * 1 onion, chopped
 * 1/2 red bell pepper, diced

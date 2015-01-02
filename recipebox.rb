@@ -178,11 +178,11 @@ class RecipeBox < Sinatra::Base
     relative_filepath = File.basename(PagesFolder) + '/' + params[:splat].first
     begin
       @meta = readmeta(filepath + '.textile')
-      body = textile((@meta['body'] || relative_filepath.to_sym), :layout => :print_layout)
+      body = textile((@meta['body'] || relative_filepath.to_sym), :layout => :print)
     rescue Errno::ENOENT
       begin
         @meta = readmeta(filepath + '.md')
-        body = markdown((@meta['body'] || relative_filepath.to_sym), :layout => :print_layout)
+        body = markdown((@meta['body'] || relative_filepath.to_sym), :layout => :print)
       rescue Errno::ENOENT
       end
     end

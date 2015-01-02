@@ -3,8 +3,6 @@ date: 1391399433
 desc: chickpeas, tomato, and spinach seasoned on a bed of rice
 ---
 
-h2. Chickpea Pilaf
-
 * 4 cups jasmine or basmati rice, cooked
 * 1 Tbsp olive oil
 * 2 onions, chopped

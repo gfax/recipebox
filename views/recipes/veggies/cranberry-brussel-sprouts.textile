@@ -3,8 +3,6 @@ date: 1390269237
 desc: butter-pecan fried brussel sprouts in garlic
 ---
 
-h2. Cranberry Brussel Sprouts
-
 * 1/2 cup pecans, halved
 * 1/4 cup butter
 * 1 lb brussel sprouts, quartered
