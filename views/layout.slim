@@ -8,15 +8,12 @@ html
     link rel="stylesheet" href="/master.css"
 
   body
-    #topbar
-      ul
-        li: a href="//gfax.ch"  Home
-        li: a href="//github.com/gfax" title=("All the sauces")  Github
-        li: a href="//lit.gfax.ch"  Library
-        li: a href="//p.gfax.ch"  Pastebox
-        /li: a href="//wiki.gfax.ch"  WikiFax
-        li.first: a href="//r.gfax.ch"  Recipebox
-        li: a href="//z.gfax.ch"  Zipper
+    /#topbar
+      /ul
+        /li: a href="//gfax.ch"  Home
+        /li: a href="//github.com/gfax" title=("All the sauces")  Github
+        /li: a href="//lit.gfax.ch"  Library
+        /li.first: a href="//r.gfax.ch"  Recipebox
     #container
       #content
         - if @meta
@@ -35,6 +32,6 @@ html
         - elsif @meta['date']
           | Posted #{@meta['date'].strftime '%y-%m'}.
       p
-        | Copyright © #{Time.now.year} #{SiteName}. 
+        | Copyright © #{Time.now.year} #{SiteName}.&nbsp;
         a href="/atom.xml" Atom feed
         | .

@@ -11,7 +11,7 @@
   - for page in categories.last do
     li
       - if page['date']
-        | (#{page['date'].strftime '%y-%m'}) 
+        | (#{page['date'].strftime '%y-%m'})&nbsp;
       a href="/#{page['filepath']}" #{page['title']}
       - if page['desc']
         |  - #{page['desc']}
