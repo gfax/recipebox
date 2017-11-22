@@ -1,5 +1,9 @@
+# Log and temp files
 .cache/
 log/
 .sass-cache/
 unicorn.pid
 unicorn.sock
+
+# Gems folder
+vendor/
