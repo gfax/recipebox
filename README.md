@@ -3,7 +3,7 @@ recipebox
 
 Sinatra app for [r.gfax.ch](http://r.gfax.ch). This app caches files written in [textile](http://redcloth.org/try-redcloth/) and markdown for a quick database-less website -- written for those that want a small site or blog with git version control. This app uses [slim](http://slim-lang.com/) for templating and purebred sass syntax for the stylesheets.
 
-###Up and Running
+### Up and Running
 
 Modify `unicorn.rb` to suit your needs then run the commands:
 
@@ -13,7 +13,7 @@ Modify `unicorn.rb` to suit your needs then run the commands:
 Modify `recipebox.rb` to set your app name and environment.
 
 
-###Example Page
+### Example Page
 
 See `views/recipes` for folder hierarchy and examples using textile. Since I personally don't use markdown, here is an example markdown page:
 
@@ -34,7 +34,7 @@ See `views/recipes` for folder hierarchy and examples using textile. Since I per
 
 Copy the code above into a new file and save as `views/recipes/markdown-soup.md` and let the main page auto-sort the new recipe for you.
 
-###Caching and Nginx
+### Caching and Nginx
 
 When in a production environment, the app will write html files of the index and sub-pages to a folder called `.cache` in the app root. The sass handler should take care of the stylesheets for you automatically. Otherwise, drop static css files in the public folder. Though very rudimentary, this will bypass routing through unicorn for repeating requests, and you can clear the cache by deleting `.cache` or any file in it.
 Here's a basic config pointing to the cache folder in Nginx:
@@ -65,7 +65,7 @@ Here's a basic config pointing to the cache folder in Nginx:
       }
     }
 
-###Example Systemd Service File
+### Example Systemd Service File
 
 If you use a systemd-based system (like Arch Linux), you can copy this config to a .service file and edit the file paths to match your site root and unicorn path.
 
@@ -75,15 +75,17 @@ If you use a systemd-based system (like Arch Linux), you can copy this config to
 
     [Service]
     Type=forking
-    User=root
+    User=www-data
     WorkingDirectory=/srv/recipebox
     ExecStart=/usr/bin/unicorn -D -c unicorn.rb
 
     [Install]
     WantedBy=multi-user.target
 
-###What's the command for unix time again?
-    date +%s
+### What's the command for unix time again?
 
+```sh
+date +%s
+```
 
 Yeeeeeppp.
